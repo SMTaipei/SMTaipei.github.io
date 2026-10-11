@@ -78,6 +78,21 @@ const VERSION = "1.1.0";
 // only evidence a half-open socket ever gives.
 const KEEPALIVE = '{"t":"k"}';
 
+// How long an operator may go unheard before it stops counting as one.
+//
+// A socket whose far end vanished without a close frame — the iPad put down
+// between services, the app swiped away, the hotspot switched off — is still
+// in getWebSockets, and nothing here ever writes to an operator unprompted, so
+// the runtime never finds out. It used to stay "the operator" for ever: every
+// display that joined was told there was one and waited on it, and an operator
+// coming back with a different `dev` (Safari and the Home Screen app keep
+// separate storage, and iOS clears a site left unused for long enough) was
+// refused its own code as "taken". The only way out was a new code.
+//
+// A live operator says something every twenty seconds. Two minutes leaves room
+// for a desktop browser throttling a background tab to one timer a minute.
+const OP_STALE_MS = 120000;
+
 export class Room {
   constructor(ctx, env) {
     this.ctx = ctx;
@@ -91,6 +106,8 @@ export class Room {
     // truth. The operator is that.
     this.snap = null;
     this.nextId = 1;
+    // Overridable only so the relay tests need not sit through two minutes.
+    this.staleMs = Number(env && env.OP_STALE_MS) || OP_STALE_MS;
   }
 
   // `except` is how a departure is counted. A socket that is closing is still
@@ -104,8 +121,35 @@ export class Room {
     });
   }
 
+  // When this socket last proved it was alive. Keepalives are answered by the
+  // runtime without waking the object, so those are read off the runtime;
+  // anything else the operator sends is stamped on the attachment.
+  lastHeard(ws) {
+    const a = ws.deserializeAttachment() || {};
+    let t = a.seen || 0;
+    if (typeof this.ctx.getWebSocketAutoResponseTimestamp === "function") {
+      const k = this.ctx.getWebSocketAutoResponseTimestamp(ws);
+      if (k && k.getTime() > t) t = k.getTime();
+    }
+    return t;
+  }
+
+  // An operator nobody has heard from in OP_STALE_MS is hung up on and stops
+  // being one. Checked lazily, whenever somebody asks who the operator is.
+  liveOps(except) {
+    const now = Date.now();
+    return this.sockets("op", except).filter((ws) => {
+      if (now - this.lastHeard(ws) <= this.staleMs) return true;
+      ws.serializeAttachment(Object.assign({}, ws.deserializeAttachment(), { role: "stale" }));
+      try {
+        ws.close(4002, "silent too long");
+      } catch {}
+      return false;
+    });
+  }
+
   operator(except) {
-    return this.sockets("op", except)[0] || null;
+    return this.liveOps(except)[0] || null;
   }
 
   send(ws, msg) {
@@ -144,7 +188,7 @@ export class Room {
 
     const id = String(this.nextId++) + "-" + Math.random().toString(36).slice(2, 8);
     this.ctx.acceptWebSocket(server);
-    server.serializeAttachment({ role, id, dev });
+    server.serializeAttachment({ role, id, dev, seen: Date.now() });
 
     // Two operators on one code are two different situations wearing the same
     // shape, and telling them apart is the whole job here.
@@ -159,7 +203,9 @@ export class Room {
     // church's stage, so it is refused instead and the app rolls a new code.
     if (role === "op") {
       const others = [];
-      for (const old of this.sockets("op", server)) {
+      // Only operators still being heard from; a silent one is no claim on the
+      // code — see OP_STALE_MS.
+      for (const old of this.liveOps(server)) {
         const a = old.deserializeAttachment() || {};
         if (dev && a.dev === dev) {
           this.send(old, { t: "replaced" });
@@ -225,6 +271,7 @@ export class Room {
     if (self.role === "rejected") return;
 
     if (self.role === "op") {
+      ws.serializeAttachment(Object.assign({}, self, { seen: Date.now() }));
       if (m.t === "s") {
         // Updates arrive with the song left out most of the time, so the cache
         // is merged rather than replaced: a display joining after a slide
@@ -395,7 +442,6 @@ function constantTimeEqual(a, b) {
 // Changing this number invalidates every stored code, since the digest would no
 // longer match. Regenerating the access code is the migration.
 const PBKDF2_ITERATIONS = 100000;
-const PBKDF2_MAX_ON_WORKERS = 100000;
 
 async function derive(code, saltB64) {
   const salt = Uint8Array.from(atob(saltB64), (c) => c.charCodeAt(0));
@@ -1106,7 +1152,7 @@ async function handleOwnerSignIn(request, env) {
   return { token, me: { id: rec.id, name: rec.name, role: rec.role, joinedAt: rec.joinedAt } };
 }
 
-async function handleCreate(request, env, actor, cfg) {
+async function handleCreate(request, env, actor) {
   requireRole(actor, "song.create");
   const body = await request.json().catch(() => ({}));
   const cached = await replayed(env, body.opId);
@@ -1437,7 +1483,7 @@ async function handleSetlistDelete(request, env, actor, cfg, id) {
 // The old shape, still answered. A device on a build that knows only one
 // setlist writes here, and it lands on whichever was touched most recently —
 // which is the one that build is showing, since that is what it was given.
-async function handleSetlist(request, env, actor, cfg) {
+async function handleSetlist(request, env, actor) {
   requireRole(actor, "setlist.set");
   const body = await request.json().catch(() => ({}));
   const entries = Array.isArray(body.setlist) ? body.setlist : [];
