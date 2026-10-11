@@ -3725,7 +3725,6 @@ if ("serviceWorker" in navigator) {
   // to nothing.
   var relay = null;        // the socket, either role
   var relayCode = "";      // the room it was opened on
-  var relayId = "";        // display: what the relay calls us, so pongs return
   var relayPeers = 0;      // operator: displays the relay says are connected
   var relaySongKey = null; // operator: the song the displays were last given
   var relayGaveUp = false; // the socket would not open; WebRTC has it from here
@@ -3797,7 +3796,6 @@ if ("serviceWorker" in navigator) {
 
   function closeRelay() {
     relayPeers = 0;
-    relayId = "";
     relaySongKey = null;
     relayTaken = false;
     relayHost = false;
@@ -3893,7 +3891,7 @@ if ("serviceWorker" in navigator) {
 
       if (m.t === "k") return;   // the echo; the stamp above was the whole point
 
-      if (m.t === "welcome") { relayId = m.id; return; }
+      if (m.t === "welcome") return;
 
       // Is anybody hosting this code? The answer arrives on joining and again
       // every time it changes, so a display waiting for an operator to open the
@@ -5703,7 +5701,7 @@ if ("serviceWorker" in navigator) {
   var opSlideList = $("opSlideList"), opSongTitle = $("opSongTitle");
   var lyricOnScreen = $("lyricOnScreen"), blankBtn = $("blankBtn");
   var builtSong = null;
-  var shownSlide = -1;   // which slide the list has already scrolled to
+  var listScrolledTo = -1;   // which slide the list has already scrolled to
 
   function setOpTab(name) {
     opTab = name;
@@ -5852,7 +5850,7 @@ if ("serviceWorker" in navigator) {
     var song = T.song;
     if (songKey(song) === builtSong) return;
     builtSong = songKey(song);
-    shownSlide = -1;              // a fresh list has not scrolled anywhere yet
+    listScrolledTo = -1;          // a fresh list has not scrolled anywhere yet
     opSlideList.innerHTML = "";
     // A dash is the shape of a field with nothing in it, which is exactly the
     // wrong thing to show: this is the way songs are added and changed, and it
@@ -5935,8 +5933,8 @@ if ("serviceWorker" in navigator) {
     // it on every refresh would yank the panel back while the operator was
     // scrolling ahead to see what is coming, which is the other thing this list
     // is for.
-    if (active && T.slide !== shownSlide) {
-      shownSlide = T.slide;
+    if (active && T.slide !== listScrolledTo) {
+      listScrolledTo = T.slide;
       var box = opSlideList.getBoundingClientRect(), r = active.getBoundingClientRect();
       if (r.top < box.top || r.bottom > box.bottom) {
         opSlideList.scrollTop += r.top - box.top - (box.height - r.height) / 2;
@@ -7081,8 +7079,8 @@ if ("serviceWorker" in navigator) {
   var outbox = [];
   try { outbox = JSON.parse(localStorage.getItem(OUTBOX_KEY) || "[]") || []; } catch (e) {}
 
-  var syncing = false, syncTimer = 0, setlistTimer = 0, lastSyncAt = 0;
-  var syncError = "", rejection = "", conflict = null, policy = null;
+  var syncing = false, syncTimer = 0, lastSyncAt = 0;
+  var syncError = "", rejection = "", conflict = null;
   var authError = "";
 
   // Writes the server has acknowledged but a snapshot may not show yet. A
@@ -7638,7 +7636,6 @@ if ("serviceWorker" in navigator) {
     if (!session) { applyRole(); return Promise.resolve(); }
     return api("/auth/me").then(function (d) {
       session.me = d.me;
-      policy = d.policy || null;
       saveSession();
       applyRole();
     }).catch(function () { applyRole(); });
@@ -8189,7 +8186,7 @@ if ("serviceWorker" in navigator) {
     }
     // "A" and "Am" on their own are words in some songs; only call it a chord
     // line when there are several, or when the token could not be a word.
-    return toks.length > 1 || /[0-9#\/]|maj|dim|sus|aug|add/.test(toks[0]);
+    return toks.length > 1 || /[0-9#/]|maj|dim|sus|aug|add/.test(toks[0]);
   }
 
   function parseSong(text, perSlide) {
@@ -8205,7 +8202,7 @@ if ("serviceWorker" in navigator) {
       var t = raw.trim(), m;
       if ((m = t.match(/^title\s*:\s*(.+)$/i))) { title = m[1].trim(); return; }
       if (!t) { closeBlock(); return; }
-      m = t.match(/^\[\s*(.+?)\s*\]$/) || t.match(/^([A-Za-z][A-Za-z0-9 .'\-]{0,18}):$/);
+      m = t.match(/^\[\s*(.+?)\s*\]$/) || t.match(/^([A-Za-z][A-Za-z0-9 .'-]{0,18}):$/);
       // Plenty of lyric pages write the header bare — "Chorus" on its own line,
       // no brackets, no colon — and it would otherwise be sung as a lyric.
       if (!m && BARE_TAG.test(t)) m = [t, t];
@@ -8326,7 +8323,7 @@ if ("serviceWorker" in navigator) {
   }
 
   // ----- the library screen -----
-  var libraryEl = $("library"), songRows = $("songRows"), songSearch = $("songSearch");
+  var songRows = $("songRows"), songSearch = $("songSearch");
   var setRows = $("setRows"), setStrip = $("setStrip"), libTabs = $("libTabs");
   var pasteBox = $("pasteBox"), parseNote = $("parseNote"), songTitleInput = $("songTitleInput");
   var saveSongBtn = $("saveSongBtn"), deleteSongBtn = $("deleteSongBtn");

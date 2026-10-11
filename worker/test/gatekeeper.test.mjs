@@ -727,7 +727,7 @@ async function testSetlistMigration() {
     setlistBy: "Someone"
   };
   const { env, code } = await setup(legacy);
-  const john = (await call(env, "/auth/join", { method: "POST", body: { code, name: "John" } })).body.token;
+  await call(env, "/auth/join", { method: "POST", body: { code, name: "John" } });
 
   const r = await call(env, "/library");
   check("it becomes the first named setlist rather than being dropped",
