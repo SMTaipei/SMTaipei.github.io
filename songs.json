@@ -20511,8 +20511,8 @@
    "author": "Welyar Kauntu",
    "sections": [
     {
-     "key": "_1",
-     "tag": "",
+     "key": "verse",
+     "tag": "verse",
      "lines": [
       "Tiada Berkesudahan",
       "Kasih SetiaMu Tuhan"
@@ -20520,7 +20520,7 @@
      "notes": []
     },
     {
-     "key": "_2",
+     "key": "_1",
      "tag": "",
      "lines": [
       "Slalu Baru RahmatMu",
@@ -20529,7 +20529,7 @@
      "notes": []
     },
     {
-     "key": "_3",
+     "key": "_2",
      "tag": "",
      "lines": [
       "Hari Berganti Hari",
@@ -20538,7 +20538,7 @@
      "notes": []
     },
     {
-     "key": "_4",
+     "key": "_3",
      "tag": "",
      "lines": [
       "Tak Pernah Berakhir",
@@ -20547,29 +20547,18 @@
      "notes": []
     },
     {
-     "key": "_5",
-     "tag": "",
+     "key": "chorus",
+     "tag": "chorus",
      "lines": [
       "Tuhan Yesus Baik",
-      "Sungguh Amat Baik",
-      "Untuk Selama-Lamanya"
+      "Sungguh Amat Baik"
      ],
      "notes": []
     },
     {
-     "key": "_6",
+     "key": "_4",
      "tag": "",
      "lines": [
-      "Tuhan Yesus Baik",
-      "Tuhan Yesus Baik"
-     ],
-     "notes": []
-    },
-    {
-     "key": "_7",
-     "tag": "",
-     "lines": [
-      "Sungguh Amat Baik",
       "Untuk Selama-Lamanya",
       "Tuhan Yesus Baik"
      ],
@@ -20577,13 +20566,12 @@
     }
    ],
    "order": [
+    "verse",
     "_1",
     "_2",
     "_3",
-    "_4",
-    "_5",
-    "_6",
-    "_7"
+    "chorus",
+    "_4"
    ],
    "slides": [
     [
@@ -20604,26 +20592,19 @@
     ],
     [
      "Tuhan Yesus Baik",
-     "Sungguh Amat Baik",
-     "Untuk Selama-Lamanya"
+     "Sungguh Amat Baik"
     ],
     [
-     "Tuhan Yesus Baik",
-     "Tuhan Yesus Baik"
-    ],
-    [
-     "Sungguh Amat Baik",
      "Untuk Selama-Lamanya",
      "Tuhan Yesus Baik"
     ]
    ],
    "tags": [
+    "verse",
     "",
     "",
     "",
-    "",
-    "",
-    "",
+    "chorus",
     ""
    ],
    "notes": [
@@ -20632,12 +20613,11 @@
     "",
     "",
     "",
-    "",
     ""
    ],
-   "perSlide": 3,
-   "version": 2,
-   "updatedAt": 1794704094253,
+   "perSlide": 2,
+   "version": 3,
+   "updatedAt": 1794706521600,
    "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
