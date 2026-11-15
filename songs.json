@@ -20563,6 +20563,25 @@
       "Tuhan Yesus Baik"
      ],
      "notes": []
+    },
+    {
+     "key": "bridge",
+     "tag": "bridge",
+     "lines": [
+      "Yesus baik bagimu",
+      "Yesus baik bagiku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_5",
+     "tag": "",
+     "lines": [
+      "Dulu s’karang dan",
+      "Selamanya",
+      "Dia sungguh baik"
+     ],
+     "notes": []
     }
    ],
    "order": [
@@ -20571,7 +20590,9 @@
     "_2",
     "_3",
     "chorus",
-    "_4"
+    "_4",
+    "bridge",
+    "_5"
    ],
    "slides": [
     [
@@ -20597,6 +20618,17 @@
     [
      "Untuk Selama-Lamanya",
      "Tuhan Yesus Baik"
+    ],
+    [
+     "Yesus baik bagimu",
+     "Yesus baik bagiku"
+    ],
+    [
+     "Dulu s’karang dan",
+     "Selamanya"
+    ],
+    [
+     "Dia sungguh baik"
     ]
    ],
    "tags": [
@@ -20605,6 +20637,9 @@
     "",
     "",
     "chorus",
+    "",
+    "bridge",
+    "",
     ""
    ],
    "notes": [
@@ -20613,11 +20648,14 @@
     "",
     "",
     "",
+    "",
+    "",
+    "",
     ""
    ],
    "perSlide": 2,
-   "version": 3,
-   "updatedAt": 1794706521600,
+   "version": 4,
+   "updatedAt": 1794712376600,
    "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
