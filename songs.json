@@ -20981,6 +20981,94 @@
    "updatedBy": "Indra",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwh420wkegrj",
+   "title": "[IND] YA TUHAN, KU PERCAYA",
+   "authors": [
+    "GMS Live"
+   ],
+   "author": "GMS Live",
+   "sections": [
+    {
+     "key": "verse",
+     "tag": "VERSE",
+     "lines": [
+      "Ya, Tuhan, 'ku percaya",
+      "Aku percaya"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_1",
+     "tag": "",
+     "lines": [
+      "Lewati lembah air mata",
+      "Aku percaya"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_2",
+     "tag": "",
+     "lines": [
+      "Firman-Mu ya dan amin",
+      "Aku percaya"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_3",
+     "tag": "",
+     "lines": [
+      "Kem'nangan sudah Kau jamin",
+      "Aku percaya"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse",
+    "_1",
+    "_2",
+    "_3"
+   ],
+   "slides": [
+    [
+     "Ya, Tuhan, 'ku percaya",
+     "Aku percaya"
+    ],
+    [
+     "Lewati lembah air mata",
+     "Aku percaya"
+    ],
+    [
+     "Firman-Mu ya dan amin",
+     "Aku percaya"
+    ],
+    [
+     "Kem'nangan sudah Kau jamin",
+     "Aku percaya"
+    ]
+   ],
+   "tags": [
+    "VERSE",
+    "",
+    "",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 2,
+   "version": 1,
+   "updatedAt": 1794703386214,
+   "updatedBy": "Indra",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
