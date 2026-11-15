@@ -20359,9 +20359,7 @@
      "tag": "",
      "lines": [
       "Hanya Kau penjunanku",
-      "Hidupku di TanganMu",
-      "Kau Tuhan sanggup pulihkan",
-      "Ubahkan hati yang hancur"
+      "Hidupku di TanganMu"
      ],
      "notes": []
     },
@@ -20369,15 +20367,31 @@
      "key": "_2",
      "tag": "",
      "lines": [
-      "Ooo.. Oo,",
-      "aku milikMu selamanya",
+      "Kau Tuhan sanggup pulihkan",
+      "Ubahkan hati yang hancur"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_3",
+     "tag": "",
+     "lines": [
       "Ooo.. Oo,",
       "aku milikMu selamanya"
      ],
      "notes": []
     },
     {
-     "key": "_3",
+     "key": "_4",
+     "tag": "",
+     "lines": [
+      "Ooo.. Oo,",
+      "aku milikMu selamanya"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_5",
      "tag": "",
      "lines": [
       "Bentuk hidup - ku,",
@@ -20387,7 +20401,7 @@
      "notes": []
     },
     {
-     "key": "_4",
+     "key": "_6",
      "tag": "",
      "lines": [
       "Sampai s'lama - nya",
@@ -20397,11 +20411,18 @@
      "notes": []
     },
     {
-     "key": "_5",
+     "key": "_7",
      "tag": "",
      "lines": [
       "S’bab Kau Tuhan",
-      "jalan kehidupan",
+      "jalan kehidupan"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_8",
+     "tag": "",
+     "lines": [
       "Masa depan cerah",
       "membentang"
      ],
@@ -20413,18 +20434,25 @@
     "_2",
     "_3",
     "_4",
-    "_5"
+    "_5",
+    "_6",
+    "_7",
+    "_8"
    ],
    "slides": [
     [
      "Hanya Kau penjunanku",
-     "Hidupku di TanganMu",
+     "Hidupku di TanganMu"
+    ],
+    [
      "Kau Tuhan sanggup pulihkan",
      "Ubahkan hati yang hancur"
     ],
     [
      "Ooo.. Oo,",
-     "aku milikMu selamanya",
+     "aku milikMu selamanya"
+    ],
+    [
      "Ooo.. Oo,",
      "aku milikMu selamanya"
     ],
@@ -20440,12 +20468,17 @@
     ],
     [
      "S’bab Kau Tuhan",
-     "jalan kehidupan",
+     "jalan kehidupan"
+    ],
+    [
      "Masa depan cerah",
      "membentang"
     ]
    ],
    "tags": [
+    "",
+    "",
+    "",
     "",
     "",
     "",
@@ -20457,12 +20490,15 @@
     "",
     "",
     "",
+    "",
+    "",
+    "",
     ""
    ],
-   "perSlide": 4,
-   "version": 1,
-   "updatedAt": 1794702286598,
-   "updatedBy": "Indra",
+   "perSlide": 3,
+   "version": 2,
+   "updatedAt": 1794703861176,
+   "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
   },
