@@ -20938,6 +20938,53 @@
       "Semua Firman"
      ],
      "notes": []
+    },
+    {
+     "key": "bridge",
+     "tag": "bridge",
+     "lines": [
+      "Kupercaya",
+      "Kupercaya",
+      "Kupercaya",
+      "Semua firmanMu Amin"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_5",
+     "tag": "",
+     "lines": [
+      "Kutakkan takut",
+      "Kau  sertaku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_6",
+     "tag": "",
+     "lines": [
+      "GadaMu dan tongkatMu",
+      "Itu yang menghibur aku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_7",
+     "tag": "",
+     "lines": [
+      "Dalam kelam",
+      "kutakkan gentar"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_8",
+     "tag": "",
+     "lines": [
+      "Kumelangkah teguh",
+      "Dalam janji setiaMu"
+     ],
+     "notes": []
     }
    ],
    "order": [
@@ -20948,7 +20995,12 @@
     "verse 2",
     "_3",
     "chorus 2",
-    "_4"
+    "_4",
+    "bridge",
+    "_5",
+    "_6",
+    "_7",
+    "_8"
    ],
    "slides": [
     [
@@ -20983,6 +21035,28 @@
     [
      "Kau Pasti Genapi",
      "Semua Firman"
+    ],
+    [
+     "Kupercaya",
+     "Kupercaya",
+     "Kupercaya",
+     "Semua firmanMu Amin"
+    ],
+    [
+     "Kutakkan takut",
+     "Kau  sertaku"
+    ],
+    [
+     "GadaMu dan tongkatMu",
+     "Itu yang menghibur aku"
+    ],
+    [
+     "Dalam kelam",
+     "kutakkan gentar"
+    ],
+    [
+     "Kumelangkah teguh",
+     "Dalam janji setiaMu"
     ]
    ],
    "tags": [
@@ -20993,6 +21067,11 @@
     "Verse 2",
     "",
     "Chorus 2",
+    "",
+    "bridge",
+    "",
+    "",
+    "",
     ""
    ],
    "notes": [
@@ -21003,11 +21082,16 @@
     "",
     "",
     "",
+    "",
+    "",
+    "",
+    "",
+    "",
     ""
    ],
    "perSlide": 4,
-   "version": 2,
-   "updatedAt": 1794704224607,
+   "version": 3,
+   "updatedAt": 1794707705707,
    "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
