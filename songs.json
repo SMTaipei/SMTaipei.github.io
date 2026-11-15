@@ -20877,6 +20877,110 @@
    "updatedBy": "Indra",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwh3zw2tvc7l",
+   "title": "[IND] SEMUA FIRMANMU AMIN",
+   "authors": [
+    "Symphony Worship"
+   ],
+   "author": "Symphony Worship",
+   "sections": [
+    {
+     "key": "verse 1",
+     "tag": "Verse 1",
+     "lines": [
+      "Hatiku Tetap Teguh",
+      "Dan Berharap PadaMu",
+      "S'kalipun Tak Ada Dasar",
+      "Untuk Kuberharap"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus 1",
+     "tag": "Chorus 1",
+     "lines": [
+      "S'bab Kau Yesus Tuhan",
+      "Tak Pernah Ingkar JanjiMu",
+      "Kau Pasti Genapi",
+      "Semua FirmanMu Amin"
+     ],
+     "notes": []
+    },
+    {
+     "key": "verse 2",
+     "tag": "Verse 2",
+     "lines": [
+      "Hatiku Tetap Teguh",
+      "Dan Percaya PadaMu",
+      "S'kalipun Tak Ada Dasar",
+      "Untuk Kupercaya"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus 2",
+     "tag": "Chorus 2",
+     "lines": [
+      "Kau Yesus Tuhan",
+      "Tak Pernah Ingkar JanjiMu",
+      "Kau Pasti Genapi",
+      "Semua Firman"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse 1",
+    "chorus 1",
+    "verse 2",
+    "chorus 2"
+   ],
+   "slides": [
+    [
+     "Hatiku Tetap Teguh",
+     "Dan Berharap PadaMu",
+     "S'kalipun Tak Ada Dasar",
+     "Untuk Kuberharap"
+    ],
+    [
+     "S'bab Kau Yesus Tuhan",
+     "Tak Pernah Ingkar JanjiMu",
+     "Kau Pasti Genapi",
+     "Semua FirmanMu Amin"
+    ],
+    [
+     "Hatiku Tetap Teguh",
+     "Dan Percaya PadaMu",
+     "S'kalipun Tak Ada Dasar",
+     "Untuk Kupercaya"
+    ],
+    [
+     "Kau Yesus Tuhan",
+     "Tak Pernah Ingkar JanjiMu",
+     "Kau Pasti Genapi",
+     "Semua Firman"
+    ]
+   ],
+   "tags": [
+    "Verse 1",
+    "Chorus 1",
+    "Verse 2",
+    "Chorus 2"
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 4,
+   "version": 1,
+   "updatedAt": 1794703286600,
+   "updatedBy": "Indra",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
