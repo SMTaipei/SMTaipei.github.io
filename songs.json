@@ -20355,8 +20355,8 @@
    "author": "GMS Live",
    "sections": [
     {
-     "key": "_1",
-     "tag": "",
+     "key": "verse",
+     "tag": "verse",
      "lines": [
       "Hanya Kau penjunanku",
       "Hidupku di TanganMu"
@@ -20364,7 +20364,7 @@
      "notes": []
     },
     {
-     "key": "_2",
+     "key": "_1",
      "tag": "",
      "lines": [
       "Kau Tuhan sanggup pulihkan",
@@ -20373,7 +20373,16 @@
      "notes": []
     },
     {
-     "key": "_3",
+     "key": "pre chorus",
+     "tag": "pre chorus",
+     "lines": [
+      "Ooo.. Oo,",
+      "aku milikMu selamanya"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_2",
      "tag": "",
      "lines": [
       "Ooo.. Oo,",
@@ -20382,17 +20391,8 @@
      "notes": []
     },
     {
-     "key": "_4",
-     "tag": "",
-     "lines": [
-      "Ooo.. Oo,",
-      "aku milikMu selamanya"
-     ],
-     "notes": []
-    },
-    {
-     "key": "_5",
-     "tag": "",
+     "key": "chorus",
+     "tag": "chorus",
      "lines": [
       "Bentuk hidup - ku,",
       "jadikan sepertiMu",
@@ -20401,7 +20401,7 @@
      "notes": []
     },
     {
-     "key": "_6",
+     "key": "_3",
      "tag": "",
      "lines": [
       "Sampai s'lama - nya",
@@ -20411,8 +20411,8 @@
      "notes": []
     },
     {
-     "key": "_7",
-     "tag": "",
+     "key": "bridge",
+     "tag": "Bridge",
      "lines": [
       "S’bab Kau Tuhan",
       "jalan kehidupan"
@@ -20420,7 +20420,7 @@
      "notes": []
     },
     {
-     "key": "_8",
+     "key": "_4",
      "tag": "",
      "lines": [
       "Masa depan cerah",
@@ -20430,14 +20430,14 @@
     }
    ],
    "order": [
+    "verse",
     "_1",
+    "pre chorus",
     "_2",
+    "chorus",
     "_3",
-    "_4",
-    "_5",
-    "_6",
-    "_7",
-    "_8"
+    "bridge",
+    "_4"
    ],
    "slides": [
     [
@@ -20476,13 +20476,13 @@
     ]
    ],
    "tags": [
+    "verse",
     "",
+    "pre chorus",
     "",
+    "chorus",
     "",
-    "",
-    "",
-    "",
-    "",
+    "Bridge",
     ""
    ],
    "notes": [
@@ -20496,8 +20496,8 @@
     ""
    ],
    "perSlide": 3,
-   "version": 2,
-   "updatedAt": 1794703861176,
+   "version": 3,
+   "updatedAt": 1794706339708,
    "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
