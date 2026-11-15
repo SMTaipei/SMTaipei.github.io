@@ -20763,12 +20763,22 @@
   {
    "id": "sl_mwh2h0d91zi8",
    "name": "Ibadah 11/15",
-   "entries": [],
-   "updatedAt": 1794700757800,
-   "updatedBy": "Aldo"
+   "entries": [
+    {
+     "id": "s_mwh3eg2ixrtm",
+     "ms": 0
+    }
+   ],
+   "updatedAt": 1794702311736,
+   "updatedBy": "Indra"
   }
  ],
- "setlist": [],
- "setlistAt": 1794700757800,
- "setlistBy": "Aldo"
+ "setlist": [
+  {
+   "id": "s_mwh3eg2ixrtm",
+   "ms": 0
+  }
+ ],
+ "setlistAt": 1794702311736,
+ "setlistBy": "Indra"
 }
