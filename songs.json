@@ -20515,8 +20515,7 @@
      "tag": "",
      "lines": [
       "Tiada Berkesudahan",
-      "Kasih SetiaMu Tuhan",
-      "Slalu Baru RahmatMu Bagiku"
+      "Kasih SetiaMu Tuhan"
      ],
      "notes": []
     },
@@ -20524,14 +20523,31 @@
      "key": "_2",
      "tag": "",
      "lines": [
-      "Hari Berganti Hari",
-      "Tetap Ku Lihat KasihMu",
-      "Tak Pernah Berakhir Di Hidupku"
+      "Slalu Baru RahmatMu",
+      "Bagiku"
      ],
      "notes": []
     },
     {
      "key": "_3",
+     "tag": "",
+     "lines": [
+      "Hari Berganti Hari",
+      "Tetap Ku Lihat KasihMu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_4",
+     "tag": "",
+     "lines": [
+      "Tak Pernah Berakhir",
+      "Di Hidupku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_5",
      "tag": "",
      "lines": [
       "Tuhan Yesus Baik",
@@ -20541,11 +20557,18 @@
      "notes": []
     },
     {
-     "key": "_4",
+     "key": "_6",
      "tag": "",
      "lines": [
       "Tuhan Yesus Baik",
-      "Tuhan Yesus Baik",
+      "Tuhan Yesus Baik"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_7",
+     "tag": "",
+     "lines": [
       "Sungguh Amat Baik",
       "Untuk Selama-Lamanya",
       "Tuhan Yesus Baik"
@@ -20557,18 +20580,27 @@
     "_1",
     "_2",
     "_3",
-    "_4"
+    "_4",
+    "_5",
+    "_6",
+    "_7"
    ],
    "slides": [
     [
      "Tiada Berkesudahan",
-     "Kasih SetiaMu Tuhan",
-     "Slalu Baru RahmatMu Bagiku"
+     "Kasih SetiaMu Tuhan"
+    ],
+    [
+     "Slalu Baru RahmatMu",
+     "Bagiku"
     ],
     [
      "Hari Berganti Hari",
-     "Tetap Ku Lihat KasihMu",
-     "Tak Pernah Berakhir Di Hidupku"
+     "Tetap Ku Lihat KasihMu"
+    ],
+    [
+     "Tak Pernah Berakhir",
+     "Di Hidupku"
     ],
     [
      "Tuhan Yesus Baik",
@@ -20577,7 +20609,9 @@
     ],
     [
      "Tuhan Yesus Baik",
-     "Tuhan Yesus Baik",
+     "Tuhan Yesus Baik"
+    ],
+    [
      "Sungguh Amat Baik",
      "Untuk Selama-Lamanya",
      "Tuhan Yesus Baik"
@@ -20587,18 +20621,24 @@
     "",
     "",
     "",
+    "",
+    "",
+    "",
     ""
    ],
    "notes": [
     "",
     "",
     "",
+    "",
+    "",
+    "",
     ""
    ],
-   "perSlide": 5,
-   "version": 1,
-   "updatedAt": 1794702562811,
-   "updatedBy": "Indra",
+   "perSlide": 3,
+   "version": 2,
+   "updatedAt": 1794704094253,
+   "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
   },
