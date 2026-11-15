@@ -21013,8 +21013,7 @@
      "key": "bridge",
      "tag": "bridge",
      "lines": [
-      "Kupercaya",
-      "Kupercaya",
+      "Kupercaya… Kupercaya",
       "Kupercaya",
       "Semua firmanMu Amin"
      ],
@@ -21107,8 +21106,7 @@
      "Semua Firman"
     ],
     [
-     "Kupercaya",
-     "Kupercaya",
+     "Kupercaya… Kupercaya",
      "Kupercaya",
      "Semua firmanMu Amin"
     ],
@@ -21159,9 +21157,9 @@
     "",
     ""
    ],
-   "perSlide": 4,
-   "version": 4,
-   "updatedAt": 1794712739718,
+   "perSlide": 3,
+   "version": 5,
+   "updatedAt": 1794712865268,
    "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
