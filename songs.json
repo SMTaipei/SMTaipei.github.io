@@ -20625,9 +20625,7 @@
     ],
     [
      "Dulu s’karang dan",
-     "Selamanya"
-    ],
-    [
+     "Selamanya",
      "Dia sungguh baik"
     ]
    ],
@@ -20639,7 +20637,6 @@
     "chorus",
     "",
     "bridge",
-    "",
     ""
    ],
    "notes": [
@@ -20650,12 +20647,11 @@
     "",
     "",
     "",
-    "",
     ""
    ],
-   "perSlide": 2,
-   "version": 4,
-   "updatedAt": 1794712376600,
+   "perSlide": 3,
+   "version": 5,
+   "updatedAt": 1794712907457,
    "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
