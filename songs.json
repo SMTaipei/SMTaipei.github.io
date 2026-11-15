@@ -20659,8 +20659,8 @@
      "notes": []
     },
     {
-     "key": "pre chorus",
-     "tag": "pre chorus",
+     "key": "pre chorus 1",
+     "tag": "pre chorus 1",
      "lines": [
       "Kau t'lah ubah",
       "ratapku jadi tarian"
@@ -20698,7 +20698,8 @@
      "key": "_5",
      "tag": "",
      "lines": [
-      "Kub'rikan hidupku bagiMu",
+      "Kub'rikan hidupku",
+      "bagiMu",
       "Bagi kemuliaanMu"
      ],
      "notes": []
@@ -20722,8 +20723,8 @@
      "notes": []
     },
     {
-     "key": "pre chorus#8",
-     "tag": "pre chorus",
+     "key": "pre chorus 2",
+     "tag": "pre chorus 2",
      "lines": [
       "Kau t'lah ubah ratapku",
       "jadi tarian"
@@ -20731,7 +20732,7 @@
      "notes": []
     },
     {
-     "key": "_9",
+     "key": "_8",
      "tag": "",
      "lines": [
       "Hapus s'gala dosa",
@@ -20740,48 +20741,11 @@
      "notes": []
     },
     {
-     "key": "_10",
+     "key": "_9",
      "tag": "",
      "lines": [
       "Kini ku jadi lebih",
       "dari pemenang"
-     ],
-     "notes": []
-    },
-    {
-     "key": "_11",
-     "tag": "",
-     "lines": [
-      "S'karang ku bersuka oooo",
-      "S'karang kubernyanyi oooo"
-     ],
-     "notes": []
-    },
-    {
-     "key": "_12",
-     "tag": "",
-     "lines": [
-      "Kub'rikan hidupku",
-      "bagiMu",
-      "Bagi kemuliaanMu"
-     ],
-     "notes": []
-    },
-    {
-     "key": "_13",
-     "tag": "",
-     "lines": [
-      "Sorak kemenangan oooo",
-      "Kau b'rikan bagiku oooo"
-     ],
-     "notes": []
-    },
-    {
-     "key": "_14",
-     "tag": "",
-     "lines": [
-      "Hidupku takkan sama lagi",
-      "Ku jadi lebih dari pemenang"
      ],
      "notes": []
     }
@@ -20790,20 +20754,16 @@
     "verse",
     "_1",
     "_2",
-    "pre chorus",
+    "pre chorus 1",
     "_3",
     "_4",
     "chorus",
     "_5",
     "_6",
     "_7",
-    "pre chorus#8",
-    "_9",
-    "_10",
-    "_11",
-    "_12",
-    "_13",
-    "_14"
+    "pre chorus 2",
+    "_8",
+    "_9"
    ],
    "slides": [
     [
@@ -20836,7 +20796,8 @@
      "S'karang kubernyanyi oooo"
     ],
     [
-     "Kub'rikan hidupku bagiMu",
+     "Kub'rikan hidupku",
+     "bagiMu",
      "Bagi kemuliaanMu"
     ],
     [
@@ -20858,41 +20819,20 @@
     [
      "Kini ku jadi lebih",
      "dari pemenang"
-    ],
-    [
-     "S'karang ku bersuka oooo",
-     "S'karang kubernyanyi oooo"
-    ],
-    [
-     "Kub'rikan hidupku",
-     "bagiMu",
-     "Bagi kemuliaanMu"
-    ],
-    [
-     "Sorak kemenangan oooo",
-     "Kau b'rikan bagiku oooo"
-    ],
-    [
-     "Hidupku takkan sama lagi",
-     "Ku jadi lebih dari pemenang"
     ]
    ],
    "tags": [
     "verse",
     "",
     "",
-    "pre chorus",
+    "pre chorus 1",
     "",
     "",
     "chorus",
     "",
     "",
     "",
-    "pre chorus",
-    "",
-    "",
-    "",
-    "",
+    "pre chorus 2",
     "",
     ""
    ],
@@ -20909,15 +20849,11 @@
     "",
     "",
     "",
-    "",
-    "",
-    "",
-    "",
     ""
    ],
-   "perSlide": 4,
-   "version": 3,
-   "updatedAt": 1794706770379,
+   "perSlide": 3,
+   "version": 4,
+   "updatedAt": 1794706971865,
    "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
