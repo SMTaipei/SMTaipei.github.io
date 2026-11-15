@@ -21069,6 +21069,160 @@
    "updatedBy": "Indra",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwh45py59nf0",
+   "title": "[IND] DENGAN SAYAPMU",
+   "authors": [
+    "Sari Simorangkir"
+   ],
+   "author": "Sari Simorangkir",
+   "sections": [
+    {
+     "key": "verse",
+     "tag": "VERSE",
+     "lines": [
+      "Firman-Mu Berkata Kau Besertaku",
+      "Maka Kuat Roh Dan Jiwaku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_1",
+     "tag": "",
+     "lines": [
+      "Tangan-Mu Tuhan S’lalu Kunantikan",
+      "Di Setiap Langkah Kupercaya"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "CHORUS",
+     "lines": [
+      "Dengan Sayap-Mu ’Ku Kan",
+      "Terbang Tinggi"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_2",
+     "tag": "",
+     "lines": [
+      "Di Tengah Badai Hidup",
+      "’Ku Tak Menyerah"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_3",
+     "tag": "",
+     "lines": [
+      "Kau Kekuatanku",
+      "Dan Perlindungan Bagiku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_4",
+     "tag": "",
+     "lines": [
+      "Pertolonganku Di Tempat",
+      "Maha Tinggi"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_5",
+     "tag": "",
+     "lines": [
+      "Ku Mengangkat Tanganku",
+      "Aku Berserah"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_6",
+     "tag": "",
+     "lines": [
+      "Kau Kunantikan Kau",
+      "Yang Kusembah",
+      "Yesusku Rajaku"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse",
+    "_1",
+    "chorus",
+    "_2",
+    "_3",
+    "_4",
+    "_5",
+    "_6"
+   ],
+   "slides": [
+    [
+     "Firman-Mu Berkata Kau Besertaku",
+     "Maka Kuat Roh Dan Jiwaku"
+    ],
+    [
+     "Tangan-Mu Tuhan S’lalu Kunantikan",
+     "Di Setiap Langkah Kupercaya"
+    ],
+    [
+     "Dengan Sayap-Mu ’Ku Kan",
+     "Terbang Tinggi"
+    ],
+    [
+     "Di Tengah Badai Hidup",
+     "’Ku Tak Menyerah"
+    ],
+    [
+     "Kau Kekuatanku",
+     "Dan Perlindungan Bagiku"
+    ],
+    [
+     "Pertolonganku Di Tempat",
+     "Maha Tinggi"
+    ],
+    [
+     "Ku Mengangkat Tanganku",
+     "Aku Berserah"
+    ],
+    [
+     "Kau Kunantikan Kau",
+     "Yang Kusembah",
+     "Yesusku Rajaku"
+    ]
+   ],
+   "tags": [
+    "VERSE",
+    "",
+    "CHORUS",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1794703558695,
+   "updatedBy": "Indra",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
