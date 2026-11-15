@@ -20967,7 +20967,14 @@
      "tag": "Verse 1",
      "lines": [
       "Hatiku Tetap Teguh",
-      "Dan Berharap PadaMu",
+      "Dan Berharap PadaMu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_1",
+     "tag": "",
+     "lines": [
       "S'kalipun Tak Ada Dasar",
       "Untuk Kuberharap"
      ],
@@ -20978,7 +20985,14 @@
      "tag": "Chorus 1",
      "lines": [
       "S'bab Kau Yesus Tuhan",
-      "Tak Pernah Ingkar JanjiMu",
+      "Tak Pernah Ingkar JanjiMu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_2",
+     "tag": "",
+     "lines": [
       "Kau Pasti Genapi",
       "Semua FirmanMu Amin"
      ],
@@ -20989,7 +21003,14 @@
      "tag": "Verse 2",
      "lines": [
       "Hatiku Tetap Teguh",
-      "Dan Percaya PadaMu",
+      "Dan Percaya PadaMu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_3",
+     "tag": "",
+     "lines": [
       "S'kalipun Tak Ada Dasar",
       "Untuk Kupercaya"
      ],
@@ -21000,7 +21021,15 @@
      "tag": "Chorus 2",
      "lines": [
       "Kau Yesus Tuhan",
-      "Tak Pernah Ingkar JanjiMu",
+      "Tak Pernah Ingkar",
+      "JanjiMu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_4",
+     "tag": "",
+     "lines": [
       "Kau Pasti Genapi",
       "Semua Firman"
      ],
@@ -21009,52 +21038,73 @@
    ],
    "order": [
     "verse 1",
+    "_1",
     "chorus 1",
+    "_2",
     "verse 2",
-    "chorus 2"
+    "_3",
+    "chorus 2",
+    "_4"
    ],
    "slides": [
     [
      "Hatiku Tetap Teguh",
-     "Dan Berharap PadaMu",
+     "Dan Berharap PadaMu"
+    ],
+    [
      "S'kalipun Tak Ada Dasar",
      "Untuk Kuberharap"
     ],
     [
      "S'bab Kau Yesus Tuhan",
-     "Tak Pernah Ingkar JanjiMu",
+     "Tak Pernah Ingkar JanjiMu"
+    ],
+    [
      "Kau Pasti Genapi",
      "Semua FirmanMu Amin"
     ],
     [
      "Hatiku Tetap Teguh",
-     "Dan Percaya PadaMu",
+     "Dan Percaya PadaMu"
+    ],
+    [
      "S'kalipun Tak Ada Dasar",
      "Untuk Kupercaya"
     ],
     [
      "Kau Yesus Tuhan",
-     "Tak Pernah Ingkar JanjiMu",
+     "Tak Pernah Ingkar",
+     "JanjiMu"
+    ],
+    [
      "Kau Pasti Genapi",
      "Semua Firman"
     ]
    ],
    "tags": [
     "Verse 1",
+    "",
     "Chorus 1",
+    "",
     "Verse 2",
-    "Chorus 2"
+    "",
+    "Chorus 2",
+    ""
    ],
    "notes": [
+    "",
+    "",
+    "",
+    "",
     "",
     "",
     "",
     ""
    ],
    "perSlide": 4,
-   "version": 1,
-   "updatedAt": 1794703286600,
-   "updatedBy": "Indra",
+   "version": 2,
+   "updatedAt": 1794704224607,
+   "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
   },
