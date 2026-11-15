@@ -20345,6 +20345,126 @@
    "updatedBy": "Lid",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwh3eg2ixrtm",
+   "title": "[IND] SERUPA DENGANMU",
+   "authors": [
+    "GMS Live"
+   ],
+   "author": "GMS Live",
+   "sections": [
+    {
+     "key": "_1",
+     "tag": "",
+     "lines": [
+      "Hanya Kau penjunanku",
+      "Hidupku di TanganMu",
+      "Kau Tuhan sanggup pulihkan",
+      "Ubahkan hati yang hancur"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_2",
+     "tag": "",
+     "lines": [
+      "Ooo.. Oo,",
+      "aku milikMu selamanya",
+      "Ooo.. Oo,",
+      "aku milikMu selamanya"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_3",
+     "tag": "",
+     "lines": [
+      "Bentuk hidup - ku,",
+      "jadikan sepertiMu",
+      "Serupa denganMu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_4",
+     "tag": "",
+     "lines": [
+      "Sampai s'lama - nya",
+      "Ku mau bersinar s'lalu,",
+      "B’ritakan karyaMu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_5",
+     "tag": "",
+     "lines": [
+      "S’bab Kau Tuhan",
+      "jalan kehidupan",
+      "Masa depan cerah",
+      "membentang"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "_1",
+    "_2",
+    "_3",
+    "_4",
+    "_5"
+   ],
+   "slides": [
+    [
+     "Hanya Kau penjunanku",
+     "Hidupku di TanganMu",
+     "Kau Tuhan sanggup pulihkan",
+     "Ubahkan hati yang hancur"
+    ],
+    [
+     "Ooo.. Oo,",
+     "aku milikMu selamanya",
+     "Ooo.. Oo,",
+     "aku milikMu selamanya"
+    ],
+    [
+     "Bentuk hidup - ku,",
+     "jadikan sepertiMu",
+     "Serupa denganMu"
+    ],
+    [
+     "Sampai s'lama - nya",
+     "Ku mau bersinar s'lalu,",
+     "B’ritakan karyaMu"
+    ],
+    [
+     "S’bab Kau Tuhan",
+     "jalan kehidupan",
+     "Masa depan cerah",
+     "membentang"
+    ]
+   ],
+   "tags": [
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 4,
+   "version": 1,
+   "updatedAt": 1794702286598,
+   "updatedBy": "Indra",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
