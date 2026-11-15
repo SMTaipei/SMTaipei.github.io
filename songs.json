@@ -20651,11 +20651,18 @@
    "author": "GMS Live",
    "sections": [
     {
+     "key": "verse",
+     "tag": "verse",
+     "lines": [
+      "Besar anug'rahMu",
+      "Ajaib perbuatanMu"
+     ],
+     "notes": []
+    },
+    {
      "key": "_1",
      "tag": "",
      "lines": [
-      "Besar anug'rahMu",
-      "Ajaib perbuatanMu",
       "Yang telah Kau nyatakan",
       "bagi diriku"
      ],
@@ -20672,11 +20679,18 @@
      "notes": []
     },
     {
+     "key": "pre chorus",
+     "tag": "pre chorus",
+     "lines": [
+      "Kau t'lah ubah",
+      "ratapku jadi tarian"
+     ],
+     "notes": []
+    },
+    {
      "key": "_3",
      "tag": "",
      "lines": [
-      "Kau t'lah ubah",
-      "ratapku jadi tarian",
       "Hapus s'gala dosa",
       "dan masa laluku"
      ],
@@ -20692,8 +20706,8 @@
      "notes": []
     },
     {
-     "key": "_5",
-     "tag": "",
+     "key": "chorus",
+     "tag": "chorus",
      "lines": [
       "S'karang ku bersuka oooo",
       "S'karang kubernyanyi oooo"
@@ -20701,7 +20715,7 @@
      "notes": []
     },
     {
-     "key": "_6",
+     "key": "_5",
      "tag": "",
      "lines": [
       "Kub'rikan hidupku bagiMu",
@@ -20710,7 +20724,7 @@
      "notes": []
     },
     {
-     "key": "_7",
+     "key": "_6",
      "tag": "",
      "lines": [
       "Sorak kemenangan oooo",
@@ -20719,7 +20733,7 @@
      "notes": []
     },
     {
-     "key": "_8",
+     "key": "_7",
      "tag": "",
      "lines": [
       "Hidupku takkan sama lagi",
@@ -20728,11 +20742,18 @@
      "notes": []
     },
     {
-     "key": "_9",
+     "key": "_8",
      "tag": "",
      "lines": [
       "Besar anug'rahMu",
-      "Ajaib perbuatanMu",
+      "Ajaib perbuatanMu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_9",
+     "tag": "",
+     "lines": [
       "Yang telah Kau nyatakan",
       "bagi diriku"
      ],
@@ -20788,7 +20809,8 @@
      "key": "_15",
      "tag": "",
      "lines": [
-      "Kub'rikan hidupku bagiMu",
+      "Kub'rikan hidupku",
+      "bagiMu",
       "Bagi kemuliaanMu"
      ],
      "notes": []
@@ -20813,10 +20835,13 @@
     }
    ],
    "order": [
+    "verse",
     "_1",
     "_2",
+    "pre chorus",
     "_3",
     "_4",
+    "chorus",
     "_5",
     "_6",
     "_7",
@@ -20834,7 +20859,9 @@
    "slides": [
     [
      "Besar anug'rahMu",
-     "Ajaib perbuatanMu",
+     "Ajaib perbuatanMu"
+    ],
+    [
      "Yang telah Kau nyatakan",
      "bagi diriku"
     ],
@@ -20845,7 +20872,9 @@
     ],
     [
      "Kau t'lah ubah",
-     "ratapku jadi tarian",
+     "ratapku jadi tarian"
+    ],
+    [
      "Hapus s'gala dosa",
      "dan masa laluku"
     ],
@@ -20871,7 +20900,9 @@
     ],
     [
      "Besar anug'rahMu",
-     "Ajaib perbuatanMu",
+     "Ajaib perbuatanMu"
+    ],
+    [
      "Yang telah Kau nyatakan",
      "bagi diriku"
     ],
@@ -20897,7 +20928,8 @@
      "S'karang kubernyanyi oooo"
     ],
     [
-     "Kub'rikan hidupku bagiMu",
+     "Kub'rikan hidupku",
+     "bagiMu",
      "Bagi kemuliaanMu"
     ],
     [
@@ -20910,10 +20942,13 @@
     ]
    ],
    "tags": [
+    "verse",
     "",
     "",
+    "pre chorus",
     "",
     "",
+    "chorus",
     "",
     "",
     "",
@@ -20945,12 +20980,15 @@
     "",
     "",
     "",
+    "",
+    "",
+    "",
     ""
    ],
    "perSlide": 4,
-   "version": 1,
-   "updatedAt": 1794702984527,
-   "updatedBy": "Indra",
+   "version": 2,
+   "updatedAt": 1794704352532,
+   "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
   },
