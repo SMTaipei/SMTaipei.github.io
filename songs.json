@@ -21401,6 +21401,160 @@
    "updatedBy": "Indra",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwheby1cvzjq",
+   "title": "[ENG] I OFFER MY LIFE",
+   "authors": [
+    "Doen Moen"
+   ],
+   "author": "Doen Moen",
+   "sections": [
+    {
+     "key": "verse 1",
+     "tag": "Verse 1",
+     "lines": [
+      "Things in the past, things yet unseen",
+      "Wishes and dreams that are yet to come true",
+      "All of my hopes and all of my plans",
+      "My heart and my hands are lifted to You"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "Lord, I offer my life to You",
+      "Everything I've been through",
+      "Use it for Your glory",
+      "And Lord, I offer my days to You",
+      "Lifting my praise to You",
+      "As a pleasing sacrifice",
+      "Lord, I offer You my life"
+     ],
+     "notes": []
+    },
+    {
+     "key": "verse1",
+     "tag": "Verse1",
+     "lines": [
+      "Ini aku, s'mua milikku",
+      "Kuserahkan pada-Mu Tuhan",
+      "Penyesalan dan kebanggaan",
+      "Suka dan duka, s'mua kuserahkan"
+     ],
+     "notes": []
+    },
+    {
+     "key": "verse2",
+     "tag": "Verse2",
+     "lines": [
+      "Yang t'lah lalu, yang 'kan datang",
+      "Hasrat dan harapan yang terbayang",
+      "Masa depan dan rencanaku",
+      "S'mua kuserahkan dalam tangan-Mu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus#1",
+     "tag": "Chorus",
+     "lines": [
+      "Kupersembahkan hidupku kepada-Mu Tuhan",
+      "'Tuk kemuliaan-Mu",
+      "Kuberikan hidup ini s'bagai persembahan",
+      "Yang berkenan pada-Mu"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse 1",
+    "chorus",
+    "verse1",
+    "verse2",
+    "chorus#1"
+   ],
+   "slides": [
+    [
+     "Things in the past, things yet unseen",
+     "Wishes and dreams that are yet to come true",
+     "All of my hopes and all of my plans"
+    ],
+    [
+     "My heart and my hands are lifted to You"
+    ],
+    [
+     "Lord, I offer my life to You",
+     "Everything I've been through",
+     "Use it for Your glory"
+    ],
+    [
+     "And Lord, I offer my days to You",
+     "Lifting my praise to You",
+     "As a pleasing sacrifice"
+    ],
+    [
+     "Lord, I offer You my life"
+    ],
+    [
+     "Ini aku, s'mua milikku",
+     "Kuserahkan pada-Mu Tuhan",
+     "Penyesalan dan kebanggaan"
+    ],
+    [
+     "Suka dan duka, s'mua kuserahkan"
+    ],
+    [
+     "Yang t'lah lalu, yang 'kan datang",
+     "Hasrat dan harapan yang terbayang",
+     "Masa depan dan rencanaku"
+    ],
+    [
+     "S'mua kuserahkan dalam tangan-Mu"
+    ],
+    [
+     "Kupersembahkan hidupku kepada-Mu Tuhan",
+     "'Tuk kemuliaan-Mu",
+     "Kuberikan hidup ini s'bagai persembahan"
+    ],
+    [
+     "Yang berkenan pada-Mu"
+    ]
+   ],
+   "tags": [
+    "Verse 1",
+    "",
+    "Chorus",
+    "",
+    "",
+    "Verse1",
+    "",
+    "Verse2",
+    "",
+    "Chorus",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1794720645142,
+   "updatedBy": "Aldo",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
