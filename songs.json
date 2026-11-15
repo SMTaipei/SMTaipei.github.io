@@ -20669,8 +20669,8 @@
    "author": "GMS Live",
    "sections": [
     {
-     "key": "verse",
-     "tag": "verse",
+     "key": "verse 1",
+     "tag": "verse 1",
      "lines": [
       "Besar anug'rahMu",
       "Ajaib perbuatanMu"
@@ -20786,10 +20786,28 @@
       "dari pemenang"
      ],
      "notes": []
+    },
+    {
+     "key": "bridge",
+     "tag": "bridge",
+     "lines": [
+      "Kau telah ubah",
+      "Ratapku jadi tarian"
+     ],
+     "notes": []
+    },
+    {
+     "key": "_10",
+     "tag": "",
+     "lines": [
+      "Hapus segala dosa",
+      "Dan masa laluku"
+     ],
+     "notes": []
     }
    ],
    "order": [
-    "verse",
+    "verse 1",
     "_1",
     "_2",
     "pre chorus 1",
@@ -20801,7 +20819,9 @@
     "_7",
     "pre chorus 2",
     "_8",
-    "_9"
+    "_9",
+    "bridge",
+    "_10"
    ],
    "slides": [
     [
@@ -20857,10 +20877,18 @@
     [
      "Kini ku jadi lebih",
      "dari pemenang"
+    ],
+    [
+     "Kau telah ubah",
+     "Ratapku jadi tarian"
+    ],
+    [
+     "Hapus segala dosa",
+     "Dan masa laluku"
     ]
    ],
    "tags": [
-    "verse",
+    "verse 1",
     "",
     "",
     "pre chorus 1",
@@ -20872,6 +20900,8 @@
     "",
     "pre chorus 2",
     "",
+    "",
+    "bridge",
     ""
    ],
    "notes": [
@@ -20887,11 +20917,13 @@
     "",
     "",
     "",
+    "",
+    "",
     ""
    ],
    "perSlide": 3,
-   "version": 4,
-   "updatedAt": 1794706971865,
+   "version": 5,
+   "updatedAt": 1794712592096,
    "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
