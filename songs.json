@@ -20722,36 +20722,8 @@
      "notes": []
     },
     {
-     "key": "_8",
-     "tag": "",
-     "lines": [
-      "Besar anug'rahMu",
-      "Ajaib perbuatanMu"
-     ],
-     "notes": []
-    },
-    {
-     "key": "_9",
-     "tag": "",
-     "lines": [
-      "Yang telah Kau nyatakan",
-      "bagi diriku"
-     ],
-     "notes": []
-    },
-    {
-     "key": "_10",
-     "tag": "",
-     "lines": [
-      "Kukagum akanMu",
-      "Akan kebaikanMu",
-      "Hidup baru Kau beri"
-     ],
-     "notes": []
-    },
-    {
-     "key": "_11",
-     "tag": "",
+     "key": "pre chorus#8",
+     "tag": "pre chorus",
      "lines": [
       "Kau t'lah ubah ratapku",
       "jadi tarian"
@@ -20759,7 +20731,7 @@
      "notes": []
     },
     {
-     "key": "_12",
+     "key": "_9",
      "tag": "",
      "lines": [
       "Hapus s'gala dosa",
@@ -20768,7 +20740,7 @@
      "notes": []
     },
     {
-     "key": "_13",
+     "key": "_10",
      "tag": "",
      "lines": [
       "Kini ku jadi lebih",
@@ -20777,7 +20749,7 @@
      "notes": []
     },
     {
-     "key": "_14",
+     "key": "_11",
      "tag": "",
      "lines": [
       "S'karang ku bersuka oooo",
@@ -20786,7 +20758,7 @@
      "notes": []
     },
     {
-     "key": "_15",
+     "key": "_12",
      "tag": "",
      "lines": [
       "Kub'rikan hidupku",
@@ -20796,7 +20768,7 @@
      "notes": []
     },
     {
-     "key": "_16",
+     "key": "_13",
      "tag": "",
      "lines": [
       "Sorak kemenangan oooo",
@@ -20805,7 +20777,7 @@
      "notes": []
     },
     {
-     "key": "_17",
+     "key": "_14",
      "tag": "",
      "lines": [
       "Hidupku takkan sama lagi",
@@ -20825,16 +20797,13 @@
     "_5",
     "_6",
     "_7",
-    "_8",
+    "pre chorus#8",
     "_9",
     "_10",
     "_11",
     "_12",
     "_13",
-    "_14",
-    "_15",
-    "_16",
-    "_17"
+    "_14"
    ],
    "slides": [
     [
@@ -20879,19 +20848,6 @@
      "Ku jadi lebih dari pemenang"
     ],
     [
-     "Besar anug'rahMu",
-     "Ajaib perbuatanMu"
-    ],
-    [
-     "Yang telah Kau nyatakan",
-     "bagi diriku"
-    ],
-    [
-     "Kukagum akanMu",
-     "Akan kebaikanMu",
-     "Hidup baru Kau beri"
-    ],
-    [
      "Kau t'lah ubah ratapku",
      "jadi tarian"
     ],
@@ -20932,10 +20888,7 @@
     "",
     "",
     "",
-    "",
-    "",
-    "",
-    "",
+    "pre chorus",
     "",
     "",
     "",
@@ -20960,14 +20913,11 @@
     "",
     "",
     "",
-    "",
-    "",
-    "",
     ""
    ],
    "perSlide": 4,
-   "version": 2,
-   "updatedAt": 1794704352532,
+   "version": 3,
+   "updatedAt": 1794706770379,
    "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
