@@ -419,6 +419,16 @@
   .link-status.live .led { background: var(--ok); box-shadow: 0 0 8px rgba(74,222,128,.7); }
   .link-status.warn .led { background: var(--accent); box-shadow: 0 0 8px rgba(227,164,74,.7); }
   .link-status.down .led { background: var(--over); box-shadow: 0 0 8px rgba(226,92,74,.7); }
+  /* The way out of a refused or a lost room code. Accent-edged, because when
+     it is on screen it is the only thing worth pressing. */
+  .take-btn {
+    padding: 10px 14px;
+    font-size: 12.5px;
+    font-weight: 700;
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  #opHead .take-btn { padding: 7px 10px; font-size: 11.5px; flex: 0 0 auto; }
 
   /* ---------- join screen (iPad) ---------- */
   #codeInput {
@@ -707,6 +717,40 @@
      knows what comes next, and on the stage it was a second block of words
      competing with the one being sung. */
   #lyricZone.blank #lyricNow { visibility: hidden; }
+
+  /* ---------- announce mode ---------- */
+  /* The other zones are hidden rather than covered, and this one has no
+     background of its own: the attention flash is painted on the stage itself,
+     and an announcement that hid it would hide the one signal meant to be
+     impossible to miss. */
+  #annZone {
+    position: absolute;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--sh) * .06) calc(var(--sw) * .05);
+    text-align: center;
+    z-index: 4;
+  }
+  #stage.mode-announce #annZone { display: flex; }
+  #stage.mode-announce #labelZone, #stage.mode-announce #timeZone,
+  #stage.mode-announce #lyricZone, #stage.mode-announce #clock { visibility: hidden; }
+  #stage.standby #annZone { display: none; }
+  /* Sized in JS (fitAnn) to the largest type at which every word still fits
+     the box — the same idea as the title in message mode. Words are never
+     broken to make them fit; the type comes down instead. */
+  #annText {
+    max-width: 100%;
+    font-size: var(--ann-size, 8vh);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: .01em;
+    color: var(--ink);
+    white-space: pre-wrap;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
 
   /* standby (display connected, operator has not started yet) */
   #stage.standby #labelZone, #stage.standby #timeZone,
@@ -1243,6 +1287,41 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+  /* ---------- console: announce ---------- */
+  /* Laid out like the timer fields it sits beside, not like the two pinned
+     tabs: nothing here is pressed in time with anything, so the transport
+     stays where it is and this is simply the box under the tabs. */
+  #opAnnPanel {
+    width: 100%;
+    max-width: 620px;
+    flex: 0 0 auto;
+    display: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #opBody.tab-ann > .op-grid { display: none; }
+  #opBody.tab-ann #opAnnPanel { display: flex; }
+  /* As typed. The title field shouts because a title is a label; this is a
+     sentence somebody has to read, and capitals are what make one hard to. */
+  #annInput { text-transform: none; letter-spacing: 0; font-weight: 600; min-height: 96px; flex: 0 0 auto; }
+  #annBtns { display: flex; gap: 8px; flex: 0 0 auto; }
+  #annShow { flex: 1 1 auto; padding: 13px; font-size: 14px; letter-spacing: .04em; }
+  /* Nothing to send: either the box is empty, or what is in it is already
+     what the stage is showing. */
+  #annShow.idle { background: var(--panel-2); color: #5B6474; border: 1px solid var(--line); }
+  #annHide {
+    flex: 0 0 auto;
+    padding: 13px 18px;
+    border-radius: var(--radius);
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    color: #5B6474;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .06em;
+  }
+  #annHide.on { border-color: var(--over); color: var(--over); }
 
   #lyricHead { display: flex; align-items: center; gap: 10px; }
   /* The song name is the way into the library — changing song is the same
@@ -2754,6 +2833,9 @@ lyric line one</pre>
       <button type="button" class="ghost" id="newRoomBtn">New code</button>
     </div>
     <div class="link-status" id="opLink1"><span class="led"></span><span class="txt"></span></div>
+    <!-- Only there when the relay has said the code is being hosted somewhere
+         else, or that this device has just lost it to another. See setTake(). -->
+    <button type="button" class="ghost take-btn" id="takeBtn1" hidden>Use this code anyway</button>
 
     <div id="setupTitleBox">
       <label class="field-label" for="labelInput">Title</label>
@@ -2831,6 +2913,7 @@ lyric line one</pre>
     <div class="brand"><div class="dot"></div><h1>SPro Countdown</h1></div>
     <div class="chip"><span>ROOM</span><b id="opRoomCode">······</b></div>
     <div class="link-status" id="opLink2"><span class="led"></span><span class="txt"></span></div>
+    <button type="button" class="ghost take-btn" id="takeBtn2" hidden>Use this code anyway</button>
     <div class="spacer"></div>
   </div>
 
@@ -2853,6 +2936,7 @@ lyric line one</pre>
     <div id="opTabs">
       <button type="button" class="op-tab on" data-tab="run">Rundown</button>
       <button type="button" class="op-tab" data-tab="lyrics">Lyrics</button>
+      <button type="button" class="op-tab" data-tab="ann">Announce</button>
     </div>
 
     <div class="op-grid">
@@ -2899,6 +2983,19 @@ lyric line one</pre>
         <button type="button" id="nextSlideBtn">▶<small>Next</small></button>
         <button type="button" id="blankBtn">◼<small>Blank</small></button>
       </div>
+    </div>
+
+    <!-- One box and two buttons. Typing reaches nobody; SHOW is what sends it,
+         and after that the same button sends whatever has been changed. The
+         countdown and the running order are not touched by any of it. -->
+    <div id="opAnnPanel" class="op-panel">
+      <label class="field-label" for="annInput">Announcement</label>
+      <textarea id="annInput" class="textinput" rows="4" placeholder="Type what the stage should read…" autocomplete="off"></textarea>
+      <div id="annBtns">
+        <button type="button" id="annShow" class="primary">SHOW ON SCREEN</button>
+        <button type="button" id="annHide">HIDE</button>
+      </div>
+      <div class="hint">Fills the stage. The countdown keeps running behind it.</div>
     </div>
 
     <!-- The running order. Pressing a row starts that item: the countdown is
@@ -2954,6 +3051,11 @@ lyric line one</pre>
     <div id="lyricZone">
       <div id="lyricNow"></div>
     </div>
+    <!-- An announcement takes the whole stage. Nothing under it is stopped —
+         the countdown and the rundown go on exactly as they were — it is only
+         covered, and what is under it is there again the moment this is
+         taken down. -->
+    <div id="annZone"><div id="annText"></div></div>
     <div id="clock">00:00:00</div>
     <div id="standby">
       <div class="big">Standing by</div>
@@ -3033,7 +3135,8 @@ if ("serviceWorker" in navigator) {
     join: "",        // last room code this display joined
     dev: "",         // this device, so it can reclaim its own room code
     runTitle: true,  // starting a rundown item also puts its name on stage
-    crew: false      // this display shows the rundown, not the stage
+    crew: false,     // this display shows the rundown, not the stage
+    ann: ""          // the announcement last typed, so it survives a reload
   };
 
   try {
@@ -3134,10 +3237,17 @@ if ("serviceWorker" in navigator) {
     remainMs: 600000,   // authoritative while paused
     endAt: 0,           // authoritative while playing (epoch ms)
     label: "",
+    // Said only by an operator leaving the console. A display goes back to
+    // standby on `live: false` — and that one flag was all that stood between
+    // a running service and a blank stage, so a single snapshot carrying it by
+    // mistake blanked the stage. The two now have to agree: see applyState.
+    ended: false,
     // What the stage is showing. "timer" is the countdown large and centred;
-    // "message" hands the middle to the title; "lyrics" is the song view.
+    // "message" hands the middle to the title; "lyrics" is the song view;
+    // "announce" covers all of it with T.ann while the countdown runs on behind.
     // One value rather than a set of booleans, so the states cannot disagree.
     mode: "timer",
+    ann: "",            // the announcement, when mode is "announce"
     // The song rides along in the snapshot rather than travelling as its own
     // message. It costs a kilobyte or two per update, which buys two things:
     // a display always holds the whole song so a dropped packet can never
@@ -3178,9 +3288,9 @@ if ("serviceWorker" in navigator) {
   // assume the copy arrived.
   function snapshot(lite) {
     var d = {
-      live: T.live, playing: T.playing, totalMs: T.totalMs,
+      live: T.live, ended: T.ended, playing: T.playing, totalMs: T.totalMs,
       remainMs: T.remainMs, endAt: T.endAt, label: T.label,
-      mode: T.mode, slide: T.slide, blank: T.blank,
+      mode: T.mode, ann: T.ann, slide: T.slide, blank: T.blank,
       flashing: T.flashing, songKey: songKey(T.song), run: T.run
     };
     if (!lite) d.song = T.song;
@@ -3550,9 +3660,54 @@ if ("serviceWorker" in navigator) {
     relayoutLyrics();
   }
 
+  // ---- the announcement ----
+  //
+  // One block of text given the whole stage, at the largest size it fits. The
+  // box is asked for rather than worked out, so the padding and whatever the
+  // safe area costs are already in the answer; and the result is remembered
+  // against the text and the stage size, because this runs on every tick and
+  // a dozen forced layouts a second is not a price worth paying for a sentence
+  // that has not changed.
+  var annZone = $("annZone"), annText = $("annText");
+  var annFor = null;
+
+  function fitAnn() {
+    if (T.mode !== "announce") return;
+    var txt = T.ann || "";
+    if (annText.textContent !== txt) annText.textContent = txt;
+    var key = txt + "|" + stage.style.getPropertyValue("--sw") + "|" +
+              stage.style.getPropertyValue("--sh");
+    if (key === annFor) return;
+
+    var zs = getComputedStyle(annZone);
+    var availH = annZone.clientHeight - parseFloat(zs.paddingTop) - parseFloat(zs.paddingBottom);
+    var availW = annZone.clientWidth - parseFloat(zs.paddingLeft) - parseFloat(zs.paddingRight);
+    // A stage that is not on screen measures nothing. Leaving the key unset
+    // makes the next frame ask again — the same trap measureTitleBand avoids.
+    if (!(availH > 0) || !(availW > 0)) return;
+    annFor = key;
+
+    function fits(px) {
+      annText.style.fontSize = px + "px";
+      // scrollWidth is what catches a single word wider than the line: the
+      // block cannot be wider than the box, so the word spills and says so.
+      return annText.getBoundingClientRect().height <= availH + .5 &&
+             annText.scrollWidth <= Math.ceil(availW) + 1;
+    }
+
+    // One line can be no taller than the box, which bounds the search.
+    var lo = 6, hi = availH, best = 6, mid;
+    for (var i = 0; i < 16; i++) {
+      mid = (lo + hi) / 2;
+      if (fits(mid)) { best = mid; lo = mid; } else hi = mid;
+    }
+    annText.style.fontSize = best + "px";
+  }
+
   function renderStage() {
     stage.classList.toggle("mode-message", T.mode === "message");
     stage.classList.toggle("mode-lyrics", T.mode === "lyrics");
+    stage.classList.toggle("mode-announce", T.mode === "announce");
     stage.classList.toggle("flashing", !!T.flashing);
     stage.classList.toggle("standby", !T.live);
     document.body.classList.toggle("on-lyrics", T.mode === "lyrics");
@@ -3565,6 +3720,7 @@ if ("serviceWorker" in navigator) {
     }
     measureTitleBand();
     renderLyrics();
+    fitAnn();
 
     var remain = remainingMs();
     var over = remain <= 0;
@@ -3647,6 +3803,7 @@ if ("serviceWorker" in navigator) {
     relayoutLyrics();
     measureTitleBand();
     renderLyrics();
+    fitAnn();
   }
 
   if (window.ResizeObserver) {
@@ -3730,6 +3887,12 @@ if ("serviceWorker" in navigator) {
   var relayGaveUp = false; // the socket would not open; WebRTC has it from here
   var relayTaken = false;  // this code belongs to another room; do not redial it
   var relayHost = false;   // display: is there actually an operator in there
+  // Operator: why the code is not ours at the moment, and so what the button
+  // beside the status line offers. "taken" — somebody else is hosting it and
+  // we were refused. "replaced" — we were hosting it and another device took
+  // it on purpose. Either way the next move is a person's, not a timer's.
+  var takeMode = "";
+  var takenRetry = 0;      // the quiet look to see whether a taken code came free
 
   // ---- keeping the socket honest ----
   //
@@ -3757,6 +3920,19 @@ if ("serviceWorker" in navigator) {
   var relayBeat = 0;           // the interval sending them
   var relayRx = 0;             // when this socket last heard anything at all
   var relayTries = 0;          // consecutive failures to get the socket open
+  var relayFirstFail = 0;      // when the first of those failures happened
+  // Ten seconds for a socket to open. It was six, which is plenty for a CDN
+  // edge on a good day and not enough for a phone that has just been woken
+  // and is still finding its network.
+  var RELAY_OPEN_MS = 10000;
+  // Failures alone are not allowed to end the relay — see relayFailed. This
+  // is how long they have to have been going on for.
+  var RELAY_GIVEUP_MS = 15000;
+  // And giving up is not for ever. While the one-wifi fallback is carrying
+  // nothing, the relay is asked again this often.
+  var RELAY_REPROBE_MS = 30000;
+  var relayProbe = null;       // the socket asking that question
+  var relayProbedAt = 0;
 
   function relayOn() { return !LOCAL && !relayGaveUp; }
 
@@ -3789,9 +3965,38 @@ if ("serviceWorker" in navigator) {
     return relayOn() ? relayPeers : conns.length;
   }
 
-  function relayURL(code, asRole) {
+  function relayURL(code, asRole, extra) {
     return API_BASE.replace(/^http/, "ws") + "/room/" + code +
-           "?role=" + asRole + "&dev=" + encodeURIComponent(cfg.dev);
+           "?role=" + asRole + "&dev=" + encodeURIComponent(cfg.dev) + (extra || "");
+  }
+
+  // The button that goes with a refused or a lost code. One on the setup card
+  // and one in the console header, because either is where an operator may be
+  // standing when it happens.
+  function setTake(mode) {
+    takeMode = mode || "";
+    if (!takeMode) clearTimeout(takenRetry);
+    ["takeBtn1", "takeBtn2"].forEach(function (id) {
+      var b = $(id);
+      if (!b) return;
+      b.hidden = !takeMode;
+      b.textContent = takeMode === "replaced" ? "Take the room back" : "Use this code anyway";
+    });
+  }
+
+  // "This code is mine" said on purpose. The relay hangs up on whoever was
+  // hosting it and tells them why, so the other device does not fight back —
+  // it shows this same button and waits to be pressed.
+  function takeRoom() {
+    if (role !== "op" || !roomCode || LOCAL) return;
+    setTake("");
+    relayGaveUp = false;
+    relayTries = 0;
+    relayFirstFail = 0;
+    destroyPeer();
+    startWatchdog();
+    setLink("connecting", "Taking over room " + roomCode + "…");
+    openRelay("op", roomCode, true);
   }
 
   function closeRelay() {
@@ -3832,13 +4037,13 @@ if ("serviceWorker" in navigator) {
     else setLink("connecting", "Waiting for the operator to open room " + relayCode + "…");
   }
 
-  function openRelay(asRole, code) {
+  function openRelay(asRole, code, force) {
     closeRelay();
     relayCode = code;
     relayTaken = false;
 
     var ws;
-    try { ws = new WebSocket(relayURL(code, asRole)); }
+    try { ws = new WebSocket(relayURL(code, asRole, force ? "&force=1" : "")); }
     catch (e) { relayFailed(asRole, code); return; }
     relay = ws;
 
@@ -3853,26 +4058,28 @@ if ("serviceWorker" in navigator) {
       relayFailed(asRole, code);
     }
 
-    // Six seconds is generous for a socket to a CDN edge and short enough that
-    // nobody is left staring at a dead screen before a service.
     var giveUp = setTimeout(function () {
       if (opened || relay !== ws) return;
       try { ws.close(); } catch (e) {}
       failOnce();
-    }, 6000);
+    }, RELAY_OPEN_MS);
 
     ws.onopen = function () {
       opened = true;
       clearTimeout(giveUp);
       if (relay !== ws) return;
       relayTries = 0;
+      relayFirstFail = 0;
       relayRx = Date.now();
       startRelayBeat();
       if (asRole === "op") {
         // Nothing is assumed about what the displays are holding across a
         // reconnect, so the next update carries the song.
         relaySongKey = null;
-        setLink("ready");
+        // Not "ready" yet. An open socket is not a held code: the relay says
+        // which in its first message, and that is either a welcome or a
+        // refusal. Saying ready here flashed "Waiting for a display" at an
+        // operator who was about to be told the code is somebody else's.
       } else {
         // Deliberately not "linked" yet. Reaching the relay is not reaching the
         // stage, and the relay says which within the same breath — see "host".
@@ -3891,7 +4098,31 @@ if ("serviceWorker" in navigator) {
 
       if (m.t === "k") return;   // the echo; the stamp above was the whole point
 
-      if (m.t === "welcome") return;
+      if (m.t === "welcome") {
+        if (asRole === "op") {
+          // The code is ours, and it has stopped being a fresh one the moment
+          // it is held: a refusal on it from here on is not a collision to be
+          // rolled away from, it is a number already read out across a room.
+          claimingFresh = false;
+          setTake("");
+          setLink("ready");
+        }
+        return;
+      }
+
+      // Another device took this room on purpose — somebody pressed "Use this
+      // code anyway" on it. Redialling would take it straight back, and then
+      // that one would, and the stage would flicker between two operators for
+      // as long as both were open. So this end stops and says so; coming back
+      // is one press, and it is a person's press.
+      if (m.t === "replaced") {
+        if (asRole !== "op") return;
+        relayTaken = true;
+        try { ws.close(); } catch (e) {}
+        setTake("replaced");
+        setLink("error", "Room " + code + " was opened on another device.");
+        return;
+      }
 
       // Is anybody hosting this code? The answer arrives on joining and again
       // every time it changes, so a display waiting for an operator to open the
@@ -3925,7 +4156,20 @@ if ("serviceWorker" in navigator) {
           var other = randomRoom();
           retryTimer = setTimeout(function () { hostRoom(other); }, 200);
         } else {
-          setLink("error", "Code " + code + " is in use by another room — press New code.");
+          // Almost always this is the same church on another device — a second
+          // tablet, or Safari and the Home Screen app, which do not share
+          // storage and so look like two devices. Hence the button. The quiet
+          // retry is for the other common case: the device holding it has gone
+          // away without saying so, and the relay lets go of it after two
+          // minutes of silence.
+          setTake("taken");
+          setLink("error", "Code " + code + " is open on another device.");
+          clearTimeout(takenRetry);
+          takenRetry = setTimeout(function () {
+            if (role !== "op" || roomCode !== code || takeMode !== "taken") return;
+            if (relay && relay.readyState <= 1) return;
+            openRelay("op", code);
+          }, 15000);
         }
         return;
       }
@@ -3982,24 +4226,92 @@ if ("serviceWorker" in navigator) {
   // one wifi WebRTC is fine. Across two networks it has no path at all — that
   // is the entire reason this relay exists — so surrendering early does not
   // trade a good transport for a worse one, it trades a working one for none.
-  // Three attempts, then hand over.
+  // Three attempts, then hand over — but three attempts spread over real
+  // time. Counting alone was the bug behind "it only pairs on the same wifi"
+  // and "the code dies when I leave the app": a phone coming back from the
+  // background has no network for the first second or two, a socket opened
+  // into that fails at once rather than after a timeout, and three of those
+  // fit inside a second and a half. The relay was being written off before the
+  // radio had finished waking, and — because giving up used to last until the
+  // role was left — never looked at again. The other device, still on the
+  // relay, then waited on a room nobody would ever come back to.
+  //
+  // So the failures also have to have been going on for RELAY_GIVEUP_MS, the
+  // gaps between them grow, and one made while the page is in the background
+  // or the browser says it is offline is not evidence of anything.
   var relayRetry = 0;
   function relayFailed(asRole, code) {
     if (relayGaveUp) return;
     relay = null;
-    if (++relayTries < 3) {
+    var blind = document.hidden || navigator.onLine === false;
+    if (!blind) {
+      if (!relayFirstFail) relayFirstFail = Date.now();
+      relayTries++;
+    }
+    if (blind || relayTries < 3 || Date.now() - relayFirstFail < RELAY_GIVEUP_MS) {
       setLink("connecting", "Connecting…");
       clearTimeout(relayRetry);
       relayRetry = setTimeout(function () {
         if (!relayOn() || roomCode !== code) return;
+        if (relay && relay.readyState <= 1) return;   // the watchdog got there first
         openRelay(asRole, code);
-      }, 600);
+      }, blind ? 3000 : Math.min(4000, 600 * Math.max(1, relayTries)));
       return;
     }
     relayGaveUp = true;
+    relayProbedAt = Date.now();
     setLink("connecting", "Relay unreachable — pairing directly…");
     if (asRole === "op") hostPeer(code);
     else joinPeer(code);
+  }
+
+  // Is the fallback actually carrying anything? If it is, it is left alone:
+  // a pairing that works is not interrupted to find out whether a better one
+  // would.
+  function peerLinked() {
+    if (role === "op") return conns.length > 0;
+    return !!(dispConn && dispConn.open);
+  }
+
+  // Having given up on the relay, ask it again now and then. The question is
+  // put on a socket of its own so the fallback is not disturbed by the asking;
+  // only a yes tears it down. Without this, one bad half-minute at the start
+  // of a morning decided the transport for the rest of the service.
+  function reprobeRelay() {
+    if (!relayGaveUp || LOCAL || !roomCode || relayProbe) return;
+    if (role !== "op" && role !== "display") return;
+    if (document.hidden || navigator.onLine === false) return;
+    if (peerLinked()) return;
+    if (Date.now() - relayProbedAt < RELAY_REPROBE_MS) return;
+    relayProbedAt = Date.now();
+
+    var code = roomCode, asRole = role, ws;
+    try { ws = new WebSocket(relayURL(code, "display", "&probe=1")); }
+    catch (e) { return; }
+    relayProbe = ws;
+
+    var settled = false;
+    function done(ok) {
+      if (settled) return;
+      settled = true;
+      clearTimeout(t);
+      if (relayProbe === ws) relayProbe = null;
+      try { ws.close(); } catch (e) {}
+      if (!ok) return;
+      // Everything is checked again: the answer took time to arrive, and the
+      // person holding this may have paired, left, or changed code meanwhile.
+      if (!relayGaveUp || roomCode !== code || role !== asRole || peerLinked()) return;
+      relayGaveUp = false;
+      relayTries = 0;
+      relayFirstFail = 0;
+      destroyPeer();
+      if (asRole === "op") hostRoom(code);
+      else joinRoom(code);
+    }
+    var t = setTimeout(function () { done(false); }, RELAY_OPEN_MS);
+    ws.onopen = function () { done(true); };
+    ws.onerror = function () { done(false); };
+    ws.onclose = function () { done(false); };
   }
 
   // ---- finding a path between the two devices, the old way ----
@@ -4218,7 +4530,10 @@ if ("serviceWorker" in navigator) {
     // network may be a different one by the next time anybody pairs.
     relayGaveUp = false;
     relayTries = 0;
+    relayFirstFail = 0;
     clearTimeout(relayRetry);
+    if (relayProbe) { var rp = relayProbe; relayProbe = null; try { rp.close(); } catch (e) {} }
+    setTake("");
     clearInterval(pingTimer);
     clearInterval(localSyncTimer);
     localPeers = 0;
@@ -4265,6 +4580,9 @@ if ("serviceWorker" in navigator) {
       }
       return;
     }
+
+    // On the fallback. Before tending it, see whether the relay has come back.
+    reprobeRelay();
 
     if (!peer || peer.destroyed) {
       if (role === "op") hostRoom(roomCode);
@@ -4503,6 +4821,18 @@ if ("serviceWorker" in navigator) {
     hostSlot = 0;
     codeTries = 0;
     claimingFresh = true;
+    // A new code is also a new start for the transport. "New code" pressed on
+    // a device that had fallen back used to mint the number on the fallback
+    // too, where a display on another network could never find it — which is
+    // what "even a new code does not work until I restart the app" was.
+    setTake("");
+    if (relayGaveUp) {
+      relayGaveUp = false;
+      destroyPeer();
+    }
+    relayTries = 0;
+    relayFirstFail = 0;
+    clearTimeout(relayRetry);
     var code = randomRoom();
     if (LOCAL) hostLocal(code);
     else hostRoom(code);
@@ -4725,8 +5055,18 @@ if ("serviceWorker" in navigator) {
   // step. `song` and `run` start as null, which is an object, so they are left
   // alone here and go on being read defensively where they are used.
   function applyState(d) {
+    // A stage that is running goes back to standby only when the operator says
+    // the session is over, not merely that it is "not live". An operator that
+    // reloads mid-service, or anything else that sends one snapshot from a
+    // console that has not been started, describes itself as not live and not
+    // ended — and the countdown this display is holding is still the right
+    // thing to show until that operator presses start. An operator on a build
+    // from before `ended` existed does not send it at all, and is taken at its
+    // word as it always was.
+    var holdLive = T.live === true && d.live === false && d.ended === false;
     for (var key in d) {
       if (!(key in T)) continue;
+      if (holdLive && key === "live") continue;
       var v = d[key], was = T[key];
       if (typeof was === "number" && (typeof v !== "number" || !isFinite(v))) continue;
       if (typeof was === "boolean" && typeof v !== "boolean") continue;
@@ -5009,6 +5349,8 @@ if ("serviceWorker" in navigator) {
   function teardown(id) {
     if (id === "opScreen" || id === "solo") {
       T.live = false;
+      T.ended = true;
+      if (T.mode === "announce") T.mode = "timer";
       T.playing = false;
       T.flashing = false;
       commit();
@@ -5215,6 +5557,8 @@ if ("serviceWorker" in navigator) {
   });
 
   $("newRoomBtn").addEventListener("click", hostFreshRoom);
+  $("takeBtn1").addEventListener("click", takeRoom);
+  $("takeBtn2").addEventListener("click", takeRoom);
 
   // ============================================================
   //  Title bank — shared by the setup screen and the console
@@ -5441,6 +5785,7 @@ if ("serviceWorker" in navigator) {
     soloOverlay.classList.toggle("paused", !T.playing);
     refreshTitleApply();
     refreshLyricUI();
+    refreshAnnUI();
     broadcast();
   }
 
@@ -5515,6 +5860,7 @@ if ("serviceWorker" in navigator) {
     T.mode = "timer";
     T.flashing = false;
     T.live = true;
+    T.ended = false;
     // Publish the plan as the session opens rather than waiting for the tab to
     // be looked at, so a crew phone that joins early has something to read.
     syncRun();
@@ -5594,6 +5940,7 @@ if ("serviceWorker" in navigator) {
     opBody.appendChild(opTabsEl);
     opBody.appendChild(opGrid);
     opBody.appendChild($("opLyricPanel"));
+    opBody.appendChild($("opAnnPanel"));
     mountRunPanel("console");
     releaseWakeLock();
   }
@@ -5707,6 +6054,7 @@ if ("serviceWorker" in navigator) {
     opTab = name;
     opBodyEl.classList.toggle("tab-lyrics", name === "lyrics");
     opBodyEl.classList.toggle("tab-run", name === "run");
+    opBodyEl.classList.toggle("tab-ann", name === "ann");
     Array.prototype.forEach.call(opTabsEl.querySelectorAll(".op-tab"), function (b) {
       b.classList.toggle("on", b.getAttribute("data-tab") === name);
     });
@@ -5714,7 +6062,62 @@ if ("serviceWorker" in navigator) {
     if (name === "run") renderRun();
     fitConsole();
     refreshLyricUI();
+    refreshAnnUI();
   }
+
+  // ----- console: the announce tab -----
+  //
+  // The text box is the operator's own until SHOW is pressed, the same rule as
+  // the title field: a sentence half typed must not be able to reach a stage.
+  // What the stage was showing before is remembered here and not in T — it is
+  // this console's note about where to go back to, and no display needs it.
+  var annInput = $("annInput"), annShow = $("annShow"), annHide = $("annHide");
+  var annPrev = "timer";
+  annInput.value = cfg.ann || "";
+
+  function annDraft() { return annInput.value.replace(/\s+$/, ""); }
+
+  function refreshAnnUI() {
+    var showing = T.mode === "announce";
+    var draft = annDraft();
+    var same = showing && draft === T.ann;
+    annShow.textContent = !showing ? "SHOW ON SCREEN" : same ? "ON SCREEN" : "UPDATE";
+    annShow.classList.toggle("idle", !draft || same);
+    annHide.classList.toggle("on", showing);
+    // The tab says so too. An announcement left up is the one state here that
+    // hides the countdown, and the operator may be on another tab entirely.
+    var tab = opTabsEl.querySelector('[data-tab="ann"]');
+    if (tab) tab.textContent = showing ? "Announce ●" : "Announce";
+  }
+
+  function showAnn() {
+    var draft = annDraft();
+    if (!draft) { annInput.focus(); return; }
+    if (T.mode !== "announce") annPrev = T.mode;
+    T.ann = draft;
+    T.mode = "announce";
+    cfg.ann = draft;
+    persist();
+    commit();
+  }
+
+  function hideAnn() {
+    if (T.mode !== "announce") return;
+    // Lyrics with no song loaded would be an empty stage; the countdown is
+    // always something.
+    T.mode = (annPrev === "lyrics" && !T.song) ? "timer" : (annPrev || "timer");
+    relayoutLyrics();
+    commit();
+  }
+
+  annShow.addEventListener("click", showAnn);
+  annHide.addEventListener("click", hideAnn);
+  annInput.addEventListener("input", refreshAnnUI);
+  annInput.addEventListener("change", function () { cfg.ann = annDraft(); persist(); });
+  annInput.addEventListener("keydown", function (e) {
+    e.stopPropagation();                       // Enter still makes a new line
+    if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); showAnn(); }
+  });
 
   // Both tabs are pinned around the preview, because the preview is the thing
   // being watched and the thing that must not scroll away. What gives is
@@ -5766,7 +6169,7 @@ if ("serviceWorker" in navigator) {
     // as a whole; the lyrics and rundown tabs are panels pinned to the bottom
     // edge with one list inside them that gives. Which shape a tab is decides
     // both its floor and how "what is this short by" has to be asked.
-    var panels = { timer: opGrid, lyrics: $("opLyricPanel"), run: $("opRunPanel") };
+    var panels = { timer: opGrid, lyrics: $("opLyricPanel"), run: $("opRunPanel"), ann: $("opAnnPanel") };
     var pinned = opTab === "lyrics" || opTab === "run";
     var box = panels[opTab] || opGrid;        // the one that gives on this tab
     var floor = opTab === "lyrics" ? LYRIC_PANEL_MIN
@@ -5830,8 +6233,14 @@ if ("serviceWorker" in navigator) {
       } else {
         // Here the box that gives is the box that scrolls, so the room it has
         // can be asked for directly.
-        short = Math.min(GRID_MIN, opGrid.scrollHeight) -
-                (room - offsetInBody(box) - tail);
+        // The announce panel asks for all of itself. Its last row is the two
+        // buttons, and a panel that scrolls inside its own box hides exactly
+        // those — so the preview gives up what it can before that happens.
+        // (scrollHeight leaves the border out; the ceiling it is compared
+        // against does not.)
+        var wantBox = opTab === "ann" ? box.scrollHeight + 2
+                                      : Math.min(GRID_MIN, box.scrollHeight);
+        short = wantBox - (room - offsetInBody(box) - tail);
       }
       if (short <= 0) break;
       var h = previewBox.getBoundingClientRect().height;
@@ -6310,8 +6719,15 @@ if ("serviceWorker" in navigator) {
     // thing here that overrules the operator, and it is one press to undo —
     // but leaving a song up while the sermon starts is not something anybody
     // would have chosen either.
-    T.mode = "timer";
+    //
+    // An announcement is the exception, and on purpose: it was put up to be
+    // read, the plan carries on behind it, and it comes down when the operator
+    // takes it down. What it comes down *to* is the countdown, though, not
+    // whatever it had been covering.
+    if (T.mode === "announce") annPrev = "timer";
+    else T.mode = "timer";
     T.live = true;
+    T.ended = false;
     T.blank = false;
     armTimer(r.items[idx].t * 1000, true);   // commits, and so broadcasts
     renderRun();
