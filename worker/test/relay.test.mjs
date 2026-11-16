@@ -231,7 +231,56 @@ await wait(500);
 check("and its state does not leak into the first room",
   ((last(d1, "s") || {}).d || {}).remainMs === 777);
 
-for (const ws of [again, d1, d2, other, intruder]) { try { ws.close(); } catch {} }
+// ---------------------------------------------------------------------------
+// The refusal above protects a room from a stranger. It also locks a church
+// out of its own code when the device that holds it is simply a different one
+// — a second tablet, or Safari and the Home Screen app, which do not share
+// storage. force=1 is that operator saying so on purpose.
+console.log("\nTaking a code over on purpose\n-----------------------------");
+async function openWith(code, query) {
+  const ws = new WebSocket(`${BASE}/${code}?${query}`, { headers: { Origin: ORIGIN } });
+  ws.inbox = [];
+  ws.closed = null;
+  ws.addEventListener("message", (e) => ws.inbox.push(JSON.parse(e.data)));
+  ws.addEventListener("close", (e) => { ws.closed = e.code; });
+  return ws;
+}
+const taker = await openWith(CODE, "role=op&dev=devT&force=1");
+await until(() => last(taker, "welcome") || last(taker, "taken"));
+check("a different device asking on purpose is welcomed", !!last(taker, "welcome") && !last(taker, "taken"),
+  JSON.stringify(taker.inbox));
+await until(() => last(again, "replaced"));
+check("the operator it took over from is told", !!last(again, "replaced"));
+await until(() => again.closed !== null);
+check("and closed", again.closed === 4000, "close code " + again.closed);
+send(taker, { t: "s", d: { remainMs: 4242, songKey: "abc" } });
+await until(() => ((last(d1, "s") || {}).d || {}).remainMs === 4242);
+check("the displays follow the new operator", ((last(d1, "s") || {}).d || {}).remainMs === 4242);
+await until(() => (last(taker, "peers") || {}).n === 2);
+check("and it is told how many there are", (last(taker, "peers") || {}).n === 2,
+  JSON.stringify(seen(taker, "peers")));
+
+// Taking it back is a decision too. The device that lost the room must not
+// quietly win it again by reconnecting, or two tablets trade it for ever.
+const back = await open(CODE, "op", "devA");
+check("the device that lost the room is refused unless it asks", !!last(back, "taken"));
+check("and the new operator is left alone", taker.readyState === 1 && !last(taker, "replaced"));
+
+// ---------------------------------------------------------------------------
+console.log("\nA probe is answered without joining\n-----------------------------------");
+const probe = await openWith(CODE, "role=display&dev=devP&probe=1");
+await until(() => probe.closed !== null || probe.inbox.length > 0);
+check("a probe gets an answer", probe.inbox.some((m) => m.t === "k"), JSON.stringify(probe.inbox));
+await until(() => probe.closed !== null);
+check("and is hung up on", probe.closed !== null);
+await wait(400);
+// Asked of the head count itself rather than of how many times it was sent:
+// the refused operator above hanging up makes the relay repeat the count, and
+// against a real edge that repeat can land after this point.
+check("without being counted as a display", seen(taker, "peers").every((m) => m.n <= 2),
+  JSON.stringify(seen(taker, "peers")));
+
+for (const ws of [again, d1, d2, other, intruder, taker, back, probe]) { try { ws.close(); } catch {} }
 await wait(300);
 
 console.log("\n" + "=".repeat(50));

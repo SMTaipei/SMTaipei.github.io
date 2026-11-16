@@ -20,7 +20,7 @@
 // The last one is the point. Roles stop the wrong person; the blast-radius
 // check stops the right person having a bad day.
 
-const VERSION = "1.1.0";
+const VERSION = "1.2.0";
 
 // ---------------------------------------------------------------------------
 // The stage relay
@@ -203,14 +203,22 @@ export class Room {
     // church's stage, so it is refused instead and the app rolls a new code.
     if (role === "op") {
       const others = [];
+      // force=1 is the operator saying, on purpose, "this code is mine": the
+      // same church on a second device, or Safari and the Home Screen app
+      // (which keep separate storage, so separate `dev`s). Only ever sent
+      // after the app has shown the refusal and somebody pressed the button.
+      const force = url.searchParams.get("force") === "1";
       // Only operators still being heard from; a silent one is no claim on the
       // code — see OP_STALE_MS.
       for (const old of this.liveOps(server)) {
         const a = old.deserializeAttachment() || {};
-        if (dev && a.dev === dev) {
+        if (force || (dev && a.dev === dev)) {
+          // Stops counting as the operator now, not when the close lands —
+          // otherwise the displays are told about two hosts for a moment.
+          old.serializeAttachment(Object.assign({}, a, { role: "replaced" }));
           this.send(old, { t: "replaced" });
           try {
-            old.close(4000, "replaced by the same device");
+            old.close(4000, dev && a.dev === dev ? "replaced by the same device" : "taken over by another device");
           } catch {}
         } else {
           others.push(old);
@@ -1921,6 +1929,19 @@ export default {
       }
       if (!env.ROOM) {
         return json({ error: "no_relay", message: "The relay is not bound." }, 503, request, env);
+      }
+      // "Can a socket reach you at all?" — asked by a device that gave up on
+      // the relay and is sitting on the one-wifi fallback, to find out whether
+      // it is worth coming back. Answered here rather than in the room: the
+      // question is about the path, not about who is in there, and joining the
+      // room to ask it would count the asker as a display for a moment.
+      if (url.searchParams.get("probe") === "1") {
+        const pair = new WebSocketPair();
+        const [client, server] = Object.values(pair);
+        server.accept();
+        server.send(KEEPALIVE);
+        server.close(1000, "probe");
+        return new Response(null, { status: 101, webSocket: client });
       }
       // Named by the room code, so every device that types the same six digits
       // lands in the same object, wherever in the world it dials from.

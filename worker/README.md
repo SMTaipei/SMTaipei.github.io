@@ -210,6 +210,21 @@ socket is closed with 4000 — or a different room that rolled the same six
 digits, which is refused with `{"t":"taken"}` and closed with 4001. Replacing
 blindly would put one church's timer on another church's stage.
 
+Two more parameters, both optional:
+
+- `force=1` (operator only) — "this code is mine", said on purpose. The same
+  church on a second tablet, or Safari and the Home Screen app, which do not
+  share storage, look exactly like a stranger to the check above. The app shows
+  the refusal with a **Use this code anyway** button, and that button is the
+  only thing that sends this. Whoever was hosting is told `{"t":"replaced"}`
+  and closed with 4000; the app on that end stops and offers **Take the room
+  back** rather than redialling, so two devices cannot trade the room for ever.
+- `probe=1` — "can a socket reach you at all?". Answered by the Worker itself
+  with one keepalive and a close, without touching the room, so the asker is
+  never counted as a display. A device that fell back to WebRTC asks this every
+  thirty seconds while that fallback is carrying nothing, and comes back to the
+  relay on a yes.
+
 Messages are relayed, not interpreted: `s` (state) and `pong` go operator →
 displays, `ping`/`hello`/`need` go display → operator stamped with `from`, and
 the operator is told `peers` whenever the head count changes. The object keeps
