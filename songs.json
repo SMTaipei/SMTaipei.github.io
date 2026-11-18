@@ -21807,6 +21807,178 @@
    "updatedBy": "Sherleen",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwly342vhe53",
+   "title": "[ENG] FAITHFULNESS",
+   "authors": [
+    "Lakewood Music"
+   ],
+   "author": "Lakewood Music",
+   "sections": [
+    {
+     "key": "verse 1",
+     "tag": "Verse 1",
+     "lines": [
+      "Every hour",
+      "Every minute of my life",
+      "Has been part of Your design",
+      "Lord, the whole world's in Your hand",
+      "Every trial",
+      "Every battle that I face",
+      "God, You've met me there with grace",
+      "Every part has served Your plan"
+     ],
+     "notes": []
+    },
+    {
+     "key": "verse 2",
+     "tag": "Verse 2",
+     "lines": [
+      "Here and now",
+      "Looking back on where I've been",
+      "Still as good as You were then",
+      "There's no limit to Your love"
+     ],
+     "notes": []
+    },
+    {
+     "key": "pre-chorus",
+     "tag": "Pre-Chorus",
+     "lines": [
+      "Through it all",
+      "You've been so, so good",
+      "Kеpt Your word",
+      "Like You said You would"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "Your mercies arе new every morning",
+      "Your steadfast love will never end",
+      "This hope won't fade in the evening",
+      "Lord, how great is Your faithfulness",
+      "Lord, how great is Your faithfulness"
+     ],
+     "notes": []
+    },
+    {
+     "key": "bridge",
+     "tag": "Bridge",
+     "lines": [
+      "(Woahh, woahh)",
+      "Oh how great, oh how great",
+      "(Woahh, woahh)",
+      "Lord, how great is Your faithfulness",
+      "(Woahh, woahh)",
+      "Oh how great, oh how great",
+      "(Woahh, woahh)",
+      "Lord, how great is Your faithfulness",
+      "Your faithfulness"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse 1",
+    "verse 2",
+    "pre-chorus",
+    "chorus",
+    "bridge"
+   ],
+   "slides": [
+    [
+     "Every hour",
+     "Every minute of my life",
+     "Has been part of Your design"
+    ],
+    [
+     "Lord, the whole world's in Your hand",
+     "Every trial",
+     "Every battle that I face"
+    ],
+    [
+     "God, You've met me there with grace",
+     "Every part has served Your plan"
+    ],
+    [
+     "Here and now",
+     "Looking back on where I've been",
+     "Still as good as You were then"
+    ],
+    [
+     "There's no limit to Your love"
+    ],
+    [
+     "Through it all",
+     "You've been so, so good",
+     "Kеpt Your word"
+    ],
+    [
+     "Like You said You would"
+    ],
+    [
+     "Your mercies arе new every morning",
+     "Your steadfast love will never end",
+     "This hope won't fade in the evening"
+    ],
+    [
+     "Lord, how great is Your faithfulness",
+     "Lord, how great is Your faithfulness"
+    ],
+    [
+     "(Woahh, woahh)",
+     "Oh how great, oh how great",
+     "(Woahh, woahh)"
+    ],
+    [
+     "Lord, how great is Your faithfulness",
+     "(Woahh, woahh)",
+     "Oh how great, oh how great"
+    ],
+    [
+     "(Woahh, woahh)",
+     "Lord, how great is Your faithfulness",
+     "Your faithfulness"
+    ]
+   ],
+   "tags": [
+    "Verse 1",
+    "",
+    "",
+    "Verse 2",
+    "",
+    "Pre-Chorus",
+    "",
+    "Chorus",
+    "",
+    "Bridge",
+    "",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1794995690051,
+   "updatedBy": "Sherleen",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
