@@ -23,7 +23,7 @@
 // to hold up on its own — the alternative is one church's timer appearing on
 // another church's stage.
 const BASE = process.env.RELAY || "ws://127.0.0.1:8787/room";
-const ORIGIN = "https://swchyd.github.io";
+const ORIGIN = "https://smtaipei.github.io";
 
 // A fresh code per run. A fixed one collides with whatever is genuinely live on
 // the Worker — a browser tab left open on the same number is refused by the

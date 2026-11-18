@@ -10,7 +10,7 @@ preview_urls = false
 
 # Which repo holds the library. The Worker is the only thing that writes to it.
 [vars]
-GH_OWNER = "Swchyd"
+GH_OWNER = "SMTaipei"
 GH_REPO = "spro-countdown"
 GH_FILE = "songs.json"
 GH_BRANCH = "main"

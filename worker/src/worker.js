@@ -532,7 +532,7 @@ function originAllowed(origin, env) {
   } catch {
     return false;
   }
-  if (u.origin === "https://swchyd.github.io") return true;
+  if (u.origin === "https://smtaipei.github.io") return true;
   if ((u.protocol === "http:" || u.protocol === "https:") && PRIVATE_HOST.test(u.hostname)) return true;
   return false;
 }
@@ -744,7 +744,7 @@ function ghHeaders(env) {
 }
 
 function ghContentsUrl(env) {
-  const owner = env.GH_OWNER || "Swchyd";
+  const owner = env.GH_OWNER || "SMTaipei";
   const repo = env.GH_REPO || "spro-countdown";
   const file = env.GH_FILE || "songs.json";
   return `https://api.github.com/repos/${owner}/${repo}/contents/${file}`;
