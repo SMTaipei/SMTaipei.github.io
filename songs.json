@@ -21853,12 +21853,22 @@
   {
    "id": "sl_mwlxf1iugcb4",
    "name": "Setlist  22/11",
-   "entries": [],
-   "updatedAt": 1794994870578,
+   "entries": [
+    {
+     "id": "s_mvccm1mp0hz6",
+     "ms": 0
+    }
+   ],
+   "updatedAt": 1794994912448,
    "updatedBy": "Sherleen"
   }
  ],
- "setlist": [],
- "setlistAt": 1794994870578,
+ "setlist": [
+  {
+   "id": "s_mvccm1mp0hz6",
+   "ms": 0
+  }
+ ],
+ "setlistAt": 1794994912448,
  "setlistBy": "Sherleen"
 }
