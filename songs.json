@@ -21881,34 +21881,16 @@
    ],
    "updatedAt": 1794720649526,
    "updatedBy": "Aldo"
+  },
+  {
+   "id": "sl_mwlxdr3qilpu",
+   "name": "Setlist 18/11",
+   "entries": [],
+   "updatedAt": 1794994507819,
+   "updatedBy": "Sherleen"
   }
  ],
- "setlist": [
-  {
-   "id": "s_mwh3eg2ixrtm",
-   "ms": 0
-  },
-  {
-   "id": "s_mwh3kdltax2x",
-   "ms": 0
-  },
-  {
-   "id": "s_mwh3teyzupmh",
-   "ms": 0
-  },
-  {
-   "id": "s_mwh45py59nf0",
-   "ms": 0
-  },
-  {
-   "id": "s_mw7hqqiqt55z",
-   "ms": 0
-  },
-  {
-   "id": "s_mwheby1cvzjq",
-   "ms": 0
-  }
- ],
- "setlistAt": 1794720649526,
- "setlistBy": "Aldo"
+ "setlist": [],
+ "setlistAt": 1794994507819,
+ "setlistBy": "Sherleen"
 }
