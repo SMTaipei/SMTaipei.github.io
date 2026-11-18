@@ -21849,38 +21849,16 @@
    ],
    "updatedAt": 1794645828328,
    "updatedBy": "Lid"
+  },
+  {
+   "id": "sl_mwlxf1iugcb4",
+   "name": "Setlist 18/11",
+   "entries": [],
+   "updatedAt": 1794994571467,
+   "updatedBy": "Sherleen"
   }
  ],
- "setlist": [
-  {
-   "id": "s_mu83ykdzokkd",
-   "ms": 0
-  },
-  {
-   "id": "s_mvx1h5khavh8",
-   "ms": 0
-  },
-  {
-   "id": "s_mskncam8q8sb",
-   "ms": 0
-  },
-  {
-   "id": "s_mwfvgy5u7x17",
-   "ms": 0
-  },
-  {
-   "id": "s_mv2c6v2qqwy2",
-   "ms": 0
-  },
-  {
-   "id": "s_mw7jli44rleu",
-   "ms": 0
-  },
-  {
-   "id": "s_mvcbw03pe1hd",
-   "ms": 0
-  }
- ],
- "setlistAt": 1794645828328,
- "setlistBy": "Lid"
+ "setlist": [],
+ "setlistAt": 1794994571467,
+ "setlistBy": "Sherleen"
 }
