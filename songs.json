@@ -21555,6 +21555,136 @@
    "updatedBy": "Aldo",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwlxsgec8znd",
+   "title": "[IND] HANYA DI DALAM NAMA-NYA",
+   "authors": [
+    "JPCC Worship"
+   ],
+   "author": "JPCC Worship",
+   "sections": [
+    {
+     "key": "verse 1",
+     "tag": "Verse 1",
+     "lines": [
+      "Firman terangi jalanku",
+      "P'risai iman di s'tiap waktu",
+      "Lindungiku dari s'gala"
+     ],
+     "notes": []
+    },
+    {
+     "key": "verse 2",
+     "tag": "Verse 2",
+     "lines": [
+      "Kebenaran yang bebaskan",
+      "S'lalu b'rikanku kekuatan",
+      "Hadapi s'gala tantangan"
+     ],
+     "notes": []
+    },
+    {
+     "key": "pre-chorus",
+     "tag": "Pre-Chorus",
+     "lines": [
+      "'Tak pernah kuragu",
+      "Kar'na Dia bersamaku",
+      "Setia menjaga",
+      "Dengan kuasa mulia"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "Hanya di dalam nama-Nya",
+      "Yesus Dia sumber pengharapan",
+      "Di s'panjang hidupku",
+      "Hanya di dalam kuasa-Nya",
+      "Pasti tersedia kemenangan",
+      "Bagiku s'lama-lamanya"
+     ],
+     "notes": []
+    },
+    {
+     "key": "bridge",
+     "tag": "Bridge",
+     "lines": [
+      "Dalam nama-Nya",
+      "Ada pengharapan",
+      "Dalam kuasa-Nya kem'nangan"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse 1",
+    "verse 2",
+    "pre-chorus",
+    "chorus",
+    "bridge"
+   ],
+   "slides": [
+    [
+     "Firman terangi jalanku",
+     "P'risai iman di s'tiap waktu",
+     "Lindungiku dari s'gala"
+    ],
+    [
+     "Kebenaran yang bebaskan",
+     "S'lalu b'rikanku kekuatan",
+     "Hadapi s'gala tantangan"
+    ],
+    [
+     "'Tak pernah kuragu",
+     "Kar'na Dia bersamaku",
+     "Setia menjaga"
+    ],
+    [
+     "Dengan kuasa mulia"
+    ],
+    [
+     "Hanya di dalam nama-Nya",
+     "Yesus Dia sumber pengharapan",
+     "Di s'panjang hidupku"
+    ],
+    [
+     "Hanya di dalam kuasa-Nya",
+     "Pasti tersedia kemenangan",
+     "Bagiku s'lama-lamanya"
+    ],
+    [
+     "Dalam nama-Nya",
+     "Ada pengharapan",
+     "Dalam kuasa-Nya kem'nangan"
+    ]
+   ],
+   "tags": [
+    "Verse 1",
+    "Verse 2",
+    "Pre-Chorus",
+    "",
+    "Chorus",
+    "",
+    "Bridge"
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1794995192825,
+   "updatedBy": "Sherleen",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
