@@ -21849,66 +21849,38 @@
    ],
    "updatedAt": 1794645828328,
    "updatedBy": "Lid"
-  },
-  {
-   "id": "sl_mwh2h0d91zi8",
-   "name": "Ibadah 11/15",
-   "entries": [
-    {
-     "id": "s_mwh3eg2ixrtm",
-     "ms": 0
-    },
-    {
-     "id": "s_mwh3kdltax2x",
-     "ms": 0
-    },
-    {
-     "id": "s_mwh3teyzupmh",
-     "ms": 0
-    },
-    {
-     "id": "s_mwh45py59nf0",
-     "ms": 0
-    },
-    {
-     "id": "s_mw7hqqiqt55z",
-     "ms": 0
-    },
-    {
-     "id": "s_mwheby1cvzjq",
-     "ms": 0
-    }
-   ],
-   "updatedAt": 1794720649526,
-   "updatedBy": "Aldo"
   }
  ],
  "setlist": [
   {
-   "id": "s_mwh3eg2ixrtm",
+   "id": "s_mu83ykdzokkd",
    "ms": 0
   },
   {
-   "id": "s_mwh3kdltax2x",
+   "id": "s_mvx1h5khavh8",
    "ms": 0
   },
   {
-   "id": "s_mwh3teyzupmh",
+   "id": "s_mskncam8q8sb",
    "ms": 0
   },
   {
-   "id": "s_mwh45py59nf0",
+   "id": "s_mwfvgy5u7x17",
    "ms": 0
   },
   {
-   "id": "s_mw7hqqiqt55z",
+   "id": "s_mv2c6v2qqwy2",
    "ms": 0
   },
   {
-   "id": "s_mwheby1cvzjq",
+   "id": "s_mw7jli44rleu",
+   "ms": 0
+  },
+  {
+   "id": "s_mvcbw03pe1hd",
    "ms": 0
   }
  ],
- "setlistAt": 1794720649526,
- "setlistBy": "Aldo"
+ "setlistAt": 1794645828328,
+ "setlistBy": "Lid"
 }
