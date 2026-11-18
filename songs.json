@@ -21685,6 +21685,128 @@
    "updatedBy": "Sherleen",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwlxwfyz0mgy",
+   "title": "[IND] PERKASA",
+   "authors": [
+    "AOG Worship"
+   ],
+   "author": "AOG Worship",
+   "sections": [
+    {
+     "key": "verse1",
+     "tag": "verse1",
+     "lines": [
+      "Luasnya dunia dan s′luruh semesta",
+      "Dalam genggaman-Mu, demikian hidupku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "verse2",
+     "tag": "verse2",
+     "lines": [
+      "Dalam kesesakan, Kau takkan tinggalkan",
+      "Sinarlah kalutku, teguhlah imanku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "pre-chorus",
+     "tag": "pre-chorus",
+     "lines": [
+      "Jika Tuhan yang berperang, siapakah dapat melawan?",
+      "Kemenanganku ada dalam-Mu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus1",
+     "tag": "chorus1",
+     "lines": [
+      "Kemuliaan-Mu Kaupancarkan",
+      "Takhta-Mu takkan tergoyahkan",
+      "Kuasa maut t'lah dikalahkan",
+      "Tuhan, Kau berkuasa"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus2",
+     "tag": "chorus2",
+     "lines": [
+      "Kuangkat suara, ku berseru",
+      "Megahkan dahsyatnya nama-Mu",
+      "Seg′nap jiwaku 'kan bersorak",
+      "Nyatakan",
+      "Yesus, Kau perkasa"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse1",
+    "verse2",
+    "pre-chorus",
+    "chorus1",
+    "chorus2"
+   ],
+   "slides": [
+    [
+     "Luasnya dunia dan s′luruh semesta",
+     "Dalam genggaman-Mu, demikian hidupku"
+    ],
+    [
+     "Dalam kesesakan, Kau takkan tinggalkan",
+     "Sinarlah kalutku, teguhlah imanku"
+    ],
+    [
+     "Jika Tuhan yang berperang, siapakah dapat melawan?",
+     "Kemenanganku ada dalam-Mu"
+    ],
+    [
+     "Kemuliaan-Mu Kaupancarkan",
+     "Takhta-Mu takkan tergoyahkan",
+     "Kuasa maut t'lah dikalahkan"
+    ],
+    [
+     "Tuhan, Kau berkuasa"
+    ],
+    [
+     "Kuangkat suara, ku berseru",
+     "Megahkan dahsyatnya nama-Mu",
+     "Seg′nap jiwaku 'kan bersorak"
+    ],
+    [
+     "Nyatakan",
+     "Yesus, Kau perkasa"
+    ]
+   ],
+   "tags": [
+    "verse1",
+    "verse2",
+    "pre-chorus",
+    "chorus1",
+    "",
+    "chorus2",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1794995378989,
+   "updatedBy": "Sherleen",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
