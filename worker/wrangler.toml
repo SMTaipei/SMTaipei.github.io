@@ -11,7 +11,7 @@ preview_urls = false
 # Which repo holds the library. The Worker is the only thing that writes to it.
 [vars]
 GH_OWNER = "SMTaipei"
-GH_REPO = "spro-countdown"
+GH_REPO = "SMTaipei.github.io"
 GH_FILE = "songs.json"
 GH_BRANCH = "main"
 # Extra origins allowed to call this Worker, comma-separated. GitHub Pages and

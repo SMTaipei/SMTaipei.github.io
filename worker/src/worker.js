@@ -745,7 +745,7 @@ function ghHeaders(env) {
 
 function ghContentsUrl(env) {
   const owner = env.GH_OWNER || "SMTaipei";
-  const repo = env.GH_REPO || "spro-countdown";
+  const repo = env.GH_REPO || "SMTaipei.github.io";
   const file = env.GH_FILE || "songs.json";
   return `https://api.github.com/repos/${owner}/${repo}/contents/${file}`;
 }

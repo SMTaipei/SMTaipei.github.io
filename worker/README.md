@@ -1,6 +1,6 @@
 # Song library gatekeeper
 
-The song library is `songs.json` in the public `SMTaipei/spro-countdown` repo.
+The song library is `songs.json` in the public `SMTaipei/SMTaipei.github.io` repo.
 Reading it needs nothing — it is a public file, and every display on the stage
 has to be able to load it with no credential at all.
 
@@ -124,7 +124,7 @@ single most valuable protection in the whole system, because it is the one that
 holds even if everything else fails:
 
 ```bash
-gh api -X POST repos/SMTaipei/spro-countdown/rulesets \
+gh api -X POST repos/SMTaipei/SMTaipei.github.io/rulesets \
   -f name='protect main' -f target=branch -f enforcement=active \
   -F 'conditions[ref_name][include][]=refs/heads/main' \
   -F 'conditions[ref_name][exclude][]=' \
