@@ -22297,6 +22297,114 @@
    "updatedBy": "Sherleen",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwm1vzzlf2lz",
+   "title": "[IND] BEJJANAMU",
+   "authors": [
+    "JPCC Worship"
+   ],
+   "author": "JPCC Worship",
+   "sections": [
+    {
+     "key": "verse 1",
+     "tag": "verse 1",
+     "lines": [
+      "Kekuatan di jiwaku",
+      "Ketenangan batinku",
+      "Ada dalam hadirat-mu",
+      "Ku menyembah-mu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "verse 2",
+     "tag": "verse 2",
+     "lines": [
+      "Tersungkur ku di kaki-mu",
+      "Rasakan hadirat-mu",
+      "Tak 'kan ku melepaskan-mu",
+      "Kau cahaya bagiku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus 1",
+     "tag": "chorus 1",
+     "lines": [
+      "Mengiring-mu seumur hidupku",
+      "Masuk dalam rencana-mu bapa",
+      "Pikiranku, kehendakku, kuserahkan pada-mu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus 2",
+     "tag": "chorus 2",
+     "lines": [
+      "Harapanku hanya di dalam-mu",
+      "Ku 'kan teguh bersama-mu tuhan",
+      "Jadikanku bejana-mu untuk memuliakan-mu"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse 1",
+    "verse 2",
+    "chorus 1",
+    "chorus 2"
+   ],
+   "slides": [
+    [
+     "Kekuatan di jiwaku",
+     "Ketenangan batinku",
+     "Ada dalam hadirat-mu"
+    ],
+    [
+     "Ku menyembah-mu"
+    ],
+    [
+     "Tersungkur ku di kaki-mu",
+     "Rasakan hadirat-mu",
+     "Tak 'kan ku melepaskan-mu"
+    ],
+    [
+     "Kau cahaya bagiku"
+    ],
+    [
+     "Mengiring-mu seumur hidupku",
+     "Masuk dalam rencana-mu bapa",
+     "Pikiranku, kehendakku, kuserahkan pada-mu"
+    ],
+    [
+     "Harapanku hanya di dalam-mu",
+     "Ku 'kan teguh bersama-mu tuhan",
+     "Jadikanku bejana-mu untuk memuliakan-mu"
+    ]
+   ],
+   "tags": [
+    "verse 1",
+    "",
+    "verse 2",
+    "",
+    "chorus 1",
+    "chorus 2"
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1795002077252,
+   "updatedBy": "Sherleen",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
