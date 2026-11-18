@@ -22219,6 +22219,84 @@
    "updatedBy": "Sherleen",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwm1snzbtthl",
+   "title": "[IND] MURNIKAN HATIKU",
+   "authors": [
+    "GMS Live"
+   ],
+   "author": "GMS Live",
+   "sections": [
+    {
+     "key": "verse",
+     "tag": "verse",
+     "lines": [
+      "Kau penjunan hidupku",
+      "Hati kusrahkan seutuhnya",
+      "Genggamlah masa depanku",
+      "Kupersembahkan seluruhnya",
+      "Yesus jiwaku aman dalam tangan Mu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "chorus",
+     "lines": [
+      "Tuhan ini seluruh hidupku",
+      "Kuserahkan bagiMu oh Yesusku",
+      "Ini kerinduanku",
+      "Jadikanku kudus dan berkenan",
+      "Murnikan hatiku seperti Mu",
+      "Serupa dengan Mu Yesus"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse",
+    "chorus"
+   ],
+   "slides": [
+    [
+     "Kau penjunan hidupku",
+     "Hati kusrahkan seutuhnya",
+     "Genggamlah masa depanku"
+    ],
+    [
+     "Kupersembahkan seluruhnya",
+     "Yesus jiwaku aman dalam tangan Mu"
+    ],
+    [
+     "Tuhan ini seluruh hidupku",
+     "Kuserahkan bagiMu oh Yesusku",
+     "Ini kerinduanku"
+    ],
+    [
+     "Jadikanku kudus dan berkenan",
+     "Murnikan hatiku seperti Mu",
+     "Serupa dengan Mu Yesus"
+    ]
+   ],
+   "tags": [
+    "verse",
+    "",
+    "chorus",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1795001921022,
+   "updatedBy": "Sherleen",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
