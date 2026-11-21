@@ -22114,43 +22114,45 @@
    "slides": [
     [
      "This is the day You made",
-     "So I'll rejoice and be glad, rejoice and be glad in it",
-     "This is where I believe"
+     "So I'll rejoice and be glad, rejoice and be glad in it"
     ],
     [
+     "This is where I believe",
      "You are more than enough, more than enough for me"
     ],
     [
      "And this is",
-     "Where I believe",
-     "That you are more than enough"
+     "Where I believe"
     ],
     [
+     "That you are more than enough",
      "More than enough for me, hey"
     ],
     [
      "Jesus",
-     "Come what may",
-     "You are worthy of all"
+     "Come what may"
     ],
     [
+     "You are worthy of all",
      "Worthy of all my praise"
     ],
     [
      "You are faithful to Your promise",
-     "You are strong when I am weak",
-     "When I'm standing in Your presence"
+     "You are strong when I am weak"
     ],
     [
+     "When I'm standing in Your presence",
      "I have everything I need"
     ],
     [
      "The joy of the Lord",
-     "The joy of the Lord is my strength (It's more than a feeling)",
-     "The joy of the Lord"
+     "The joy of the Lord is my strength (It's more than a feeling)"
     ],
     [
-     "The joy of the Lord is my strength (That's right, church, that's right)",
+     "The joy of the Lord",
+     "The joy of the Lord is my strength (That's right, church, that's right)"
+    ],
+    [
      "Oh my soul, bless His Name",
      "All that is within me, say"
     ],
@@ -22160,19 +22162,21 @@
     ],
     [
      "O my soul, bless His Name",
-     "All that is within me say",
-     "The joy of the Lord"
+     "All that is within me say"
     ],
     [
+     "The joy of the Lord",
      "The joy of the Lord is my strength"
     ],
     [
      "So let it rising",
-     "Like a river",
-     "Overflowing"
+     "Like a river"
     ],
     [
-     "Holy Spirit",
+     "Overflowing",
+     "Holy Spirit"
+    ],
+    [
      "Let it pour out",
      "With no limit"
     ],
@@ -22182,10 +22186,10 @@
     ],
     [
      "I've got the joy",
-     "I've got the joy",
-     "It's the joy of the Lord"
+     "I've got the joy"
     ],
     [
+     "It's the joy of the Lord",
      "It's the joy of the Lord"
     ]
    ],
@@ -22201,9 +22205,11 @@
     "Chorus",
     "",
     "",
+    "",
     "Post-chorus",
     "",
     "Bridge",
+    "",
     "",
     "",
     "reffrain",
@@ -22227,12 +22233,14 @@
     "",
     "",
     "",
+    "",
+    "",
     ""
    ],
-   "perSlide": 3,
-   "version": 1,
-   "updatedAt": 1794996195175,
-   "updatedBy": "Sherleen",
+   "perSlide": 2,
+   "version": 2,
+   "updatedAt": 1795260841904,
+   "updatedBy": "nicole",
    "lastUsed": 0,
    "hidden": false
   },
