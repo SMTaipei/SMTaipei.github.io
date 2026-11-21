@@ -22575,26 +22575,30 @@
    ],
    "updatedAt": 1795260675117,
    "updatedBy": "nicole"
-  },
-  {
-   "id": "sl_mwqbvlc3eue9",
-   "name": "AOG 22/11",
-   "entries": [
-    {
-     "id": "s_mwm1vzzlf2lz",
-     "ms": 0
-    }
-   ],
-   "updatedAt": 1795260742168,
-   "updatedBy": "nicole"
   }
  ],
  "setlist": [
+  {
+   "id": "s_mwqbsh1r1951",
+   "ms": 0
+  },
+  {
+   "id": "s_mwlxsgec8znd",
+   "ms": 0
+  },
+  {
+   "id": "s_mwlxwfyz0mgy",
+   "ms": 0
+  },
+  {
+   "id": "s_mwm1snzbtthl",
+   "ms": 0
+  },
   {
    "id": "s_mwm1vzzlf2lz",
    "ms": 0
   }
  ],
- "setlistAt": 1795260742168,
+ "setlistAt": 1795260675117,
  "setlistBy": "nicole"
 }
