@@ -22743,46 +22743,16 @@
    ],
    "updatedAt": 1795002094626,
    "updatedBy": "Sherleen"
+  },
+  {
+   "id": "sl_mwqbfcepitiy",
+   "name": "Setlist 21/11",
+   "entries": [],
+   "updatedAt": 1795259961412,
+   "updatedBy": "nicole"
   }
  ],
- "setlist": [
-  {
-   "id": "s_mvccm1mp0hz6",
-   "ms": 0
-  },
-  {
-   "id": "s_mwlxsgec8znd",
-   "ms": 0
-  },
-  {
-   "id": "s_mwlxwfyz0mgy",
-   "ms": 0
-  },
-  {
-   "id": "s_mvcbw03pe1hd",
-   "ms": 0
-  },
-  {
-   "id": "s_mvcbzrdz32xo",
-   "ms": 0
-  },
-  {
-   "id": "s_mwly342vhe53",
-   "ms": 0
-  },
-  {
-   "id": "s_mwlydxne1l6a",
-   "ms": 0
-  },
-  {
-   "id": "s_mwm1snzbtthl",
-   "ms": 0
-  },
-  {
-   "id": "s_mwm1vzzlf2lz",
-   "ms": 0
-  }
- ],
- "setlistAt": 1795002094626,
- "setlistBy": "Sherleen"
+ "setlist": [],
+ "setlistAt": 1795259961412,
+ "setlistBy": "nicole"
 }
