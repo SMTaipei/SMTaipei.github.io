@@ -22409,46 +22409,6 @@
  ],
  "setlists": [
   {
-   "id": "sl_mvtiz5z9xy4o",
-   "name": "CT Taoyuan 10/31",
-   "entries": [
-    {
-     "id": "s_mvtj324m0fft",
-     "ms": 0
-    },
-    {
-     "id": "s_mvvumhj0od1j",
-     "ms": 0
-    },
-    {
-     "id": "s_mv7jn6dbnm94",
-     "ms": 0
-    },
-    {
-     "id": "s_mvtj867k5wxo",
-     "ms": 0
-    },
-    {
-     "id": "s_mvtj9ugpn947",
-     "ms": 0
-    },
-    {
-     "id": "s_mvtjimdshb6u",
-     "ms": 0
-    },
-    {
-     "id": "s_mv7jgwatv1ng",
-     "ms": 0
-    },
-    {
-     "id": "s_mvc9ltldcwj0",
-     "ms": 0
-    }
-   ],
-   "updatedAt": 1793417977713,
-   "updatedBy": "violla"
-  },
-  {
    "id": "sl_mvuwdj8usimg",
    "name": "CT Coach Edward",
    "entries": [
