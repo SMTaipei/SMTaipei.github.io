@@ -22405,6 +22405,102 @@
    "updatedBy": "Sherleen",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwqbsh1r1951",
+   "title": "[IND] BERSUKACITA (INILAH SAAT BERSUKACITA)",
+   "authors": [
+    "Ir. Djohan Handojo"
+   ],
+   "author": "Ir. Djohan Handojo",
+   "sections": [
+    {
+     "key": "verse 1",
+     "tag": "Verse 1",
+     "lines": [
+      "Inilah saat bersukacita",
+      "masyurkanlah kebesaran karya-Nya",
+      "Ini saatnya ini waktunya",
+      "keselamatan telah datang"
+     ],
+     "notes": []
+    },
+    {
+     "key": "verse 2",
+     "tag": "Verse 2",
+     "lines": [
+      "Inilah saat bersukacita",
+      "masyurkanlah kekudusan nama-Nya",
+      "Ini saat ini waktunya",
+      "pembebasan telah datang"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "Haleluya, Haleluya",
+      "Keluarga Tuhan dipersatukan",
+      "sukacita dalam bait-Nya",
+      "Amin bersukacita"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse 1",
+    "verse 2",
+    "chorus"
+   ],
+   "slides": [
+    [
+     "Inilah saat bersukacita",
+     "masyurkanlah kebesaran karya-Nya"
+    ],
+    [
+     "Ini saatnya ini waktunya",
+     "keselamatan telah datang"
+    ],
+    [
+     "Inilah saat bersukacita",
+     "masyurkanlah kekudusan nama-Nya"
+    ],
+    [
+     "Ini saat ini waktunya",
+     "pembebasan telah datang"
+    ],
+    [
+     "Haleluya, Haleluya",
+     "Keluarga Tuhan dipersatukan"
+    ],
+    [
+     "sukacita dalam bait-Nya",
+     "Amin bersukacita"
+    ]
+   ],
+   "tags": [
+    "Verse 1",
+    "",
+    "Verse 2",
+    "",
+    "Chorus",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 2,
+   "version": 1,
+   "updatedAt": 1795260573304,
+   "updatedBy": "nicole",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
