@@ -22551,12 +22551,22 @@
   {
    "id": "sl_mwqbg4pm4m3c",
    "name": "UMUM 22/11",
-   "entries": [],
-   "updatedAt": 1795260029465,
+   "entries": [
+    {
+     "id": "s_mwqbsh1r1951",
+     "ms": 0
+    }
+   ],
+   "updatedAt": 1795260581139,
    "updatedBy": "nicole"
   }
  ],
- "setlist": [],
- "setlistAt": 1795260029465,
+ "setlist": [
+  {
+   "id": "s_mwqbsh1r1951",
+   "ms": 0
+  }
+ ],
+ "setlistAt": 1795260581139,
  "setlistBy": "nicole"
 }
