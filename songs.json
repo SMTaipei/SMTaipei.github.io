@@ -21892,11 +21892,13 @@
    "slides": [
     [
      "Every hour",
-     "Every minute of my life",
-     "Has been part of Your design"
+     "Every minute of my life"
     ],
     [
-     "Lord, the whole world's in Your hand",
+     "Has been part of Your design",
+     "Lord, the whole world's in Your hand"
+    ],
+    [
      "Every trial",
      "Every battle that I face"
     ],
@@ -21906,47 +21908,54 @@
     ],
     [
      "Here and now",
-     "Looking back on where I've been",
-     "Still as good as You were then"
+     "Looking back on where I've been"
     ],
     [
+     "Still as good as You were then",
      "There's no limit to Your love"
     ],
     [
      "Through it all",
-     "You've been so, so good",
-     "Kеpt Your word"
+     "You've been so, so good"
     ],
     [
+     "Kеpt Your word",
      "Like You said You would"
     ],
     [
      "Your mercies arе new every morning",
-     "Your steadfast love will never end",
-     "This hope won't fade in the evening"
+     "Your steadfast love will never end"
     ],
     [
-     "Lord, how great is Your faithfulness",
+     "This hope won't fade in the evening",
      "Lord, how great is Your faithfulness"
     ],
     [
-     "(Woahh, woahh)",
-     "Oh how great, oh how great",
-     "(Woahh, woahh)"
+     "Lord, how great is Your faithfulness"
     ],
     [
-     "Lord, how great is Your faithfulness",
      "(Woahh, woahh)",
      "Oh how great, oh how great"
     ],
     [
      "(Woahh, woahh)",
-     "Lord, how great is Your faithfulness",
+     "Lord, how great is Your faithfulness"
+    ],
+    [
+     "(Woahh, woahh)",
+     "Oh how great, oh how great"
+    ],
+    [
+     "(Woahh, woahh)",
+     "Lord, how great is Your faithfulness"
+    ],
+    [
      "Your faithfulness"
     ]
    ],
    "tags": [
     "Verse 1",
+    "",
     "",
     "",
     "Verse 2",
@@ -21955,7 +21964,10 @@
     "",
     "Chorus",
     "",
+    "",
     "Bridge",
+    "",
+    "",
     "",
     ""
    ],
@@ -21971,12 +21983,16 @@
     "",
     "",
     "",
+    "",
+    "",
+    "",
+    "",
     ""
    ],
-   "perSlide": 3,
-   "version": 1,
-   "updatedAt": 1794995690051,
-   "updatedBy": "Sherleen",
+   "perSlide": 2,
+   "version": 2,
+   "updatedAt": 1795260807334,
+   "updatedBy": "nicole",
    "lastUsed": 0,
    "hidden": false
   },
