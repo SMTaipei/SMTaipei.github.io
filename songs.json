@@ -22579,12 +22579,22 @@
   {
    "id": "sl_mwqbvlc3eue9",
    "name": "AOG 22/11",
-   "entries": [],
-   "updatedAt": 1795260735047,
+   "entries": [
+    {
+     "id": "s_mwm1vzzlf2lz",
+     "ms": 0
+    }
+   ],
+   "updatedAt": 1795260742168,
    "updatedBy": "nicole"
   }
  ],
- "setlist": [],
- "setlistAt": 1795260735047,
+ "setlist": [
+  {
+   "id": "s_mwm1vzzlf2lz",
+   "ms": 0
+  }
+ ],
+ "setlistAt": 1795260742168,
  "setlistBy": "nicole"
 }
