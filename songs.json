@@ -22749,6 +22749,10 @@
    "name": "IBADAH 22/11",
    "entries": [
     {
+     "id": "s_mwr3twurbsc3",
+     "ms": 0
+    },
+    {
      "id": "s_mwlxwfyz0mgy",
      "ms": 0
     },
@@ -22765,10 +22769,6 @@
      "ms": 0
     },
     {
-     "id": "s_mwr3twurbsc3",
-     "ms": 0
-    },
-    {
      "id": "s_mwly342vhe53",
      "ms": 0
     },
@@ -22777,11 +22777,15 @@
      "ms": 0
     }
    ],
-   "updatedAt": 1795324665050,
+   "updatedAt": 1795324672429,
    "updatedBy": "Sherleen"
   }
  ],
  "setlist": [
+  {
+   "id": "s_mwr3twurbsc3",
+   "ms": 0
+  },
   {
    "id": "s_mwlxwfyz0mgy",
    "ms": 0
@@ -22799,10 +22803,6 @@
    "ms": 0
   },
   {
-   "id": "s_mwr3twurbsc3",
-   "ms": 0
-  },
-  {
    "id": "s_mwly342vhe53",
    "ms": 0
   },
@@ -22811,6 +22811,6 @@
    "ms": 0
   }
  ],
- "setlistAt": 1795324665050,
+ "setlistAt": 1795324672429,
  "setlistBy": "Sherleen"
 }
