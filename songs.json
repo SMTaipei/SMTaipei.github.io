@@ -16255,11 +16255,13 @@
     ""
    ],
    "perSlide": 2,
-   "version": 9,
-   "updatedAt": 1794576971651,
-   "updatedBy": "Lid",
+   "version": 10,
+   "updatedAt": 1795330943084,
+   "updatedBy": "Sherleen",
    "lastUsed": 0,
-   "hidden": false
+   "hidden": true,
+   "deletedAt": 1795330943084,
+   "deletedBy": "Sherleen"
   },
   {
    "id": "s_mvx3v5c9fexj",
