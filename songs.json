@@ -22625,6 +22625,78 @@
    "updatedBy": "Sherleen",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwr3twurbsc3",
+   "title": "[IND] INDAH BERSAMAMU",
+   "authors": [
+    "Franky Sihombing"
+   ],
+   "author": "Franky Sihombing",
+   "sections": [
+    {
+     "key": "verse",
+     "tag": "Verse",
+     "lines": [
+      "Hanya dekat Allahku, rasa tenang hatiku",
+      "Kau sertai jalanku, s'panjang hidupku",
+      "Hanya dekat padaMu, ada kekua-tan baru",
+      "Kaulah perlindunganku, ke'slamatanku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "Kuingin s'lalu bersekutu denganMu",
+      "Menikmati hadiratMu",
+      "Biarkan RohMu, tinggal dalam hidupku",
+      "Sungguh indah bersamaMu selamanya"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse",
+    "chorus"
+   ],
+   "slides": [
+    [
+     "Hanya dekat Allahku, rasa tenang hatiku",
+     "Kau sertai jalanku, s'panjang hidupku",
+     "Hanya dekat padaMu, ada kekua-tan baru"
+    ],
+    [
+     "Kaulah perlindunganku, ke'slamatanku"
+    ],
+    [
+     "Kuingin s'lalu bersekutu denganMu",
+     "Menikmati hadiratMu",
+     "Biarkan RohMu, tinggal dalam hidupku"
+    ],
+    [
+     "Sungguh indah bersamaMu selamanya"
+    ]
+   ],
+   "tags": [
+    "Verse",
+    "",
+    "Chorus",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1795307671474,
+   "updatedBy": "Sherleen",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
