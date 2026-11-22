@@ -16339,11 +16339,13 @@
     ""
    ],
    "perSlide": 2,
-   "version": 6,
-   "updatedAt": 1794124912419,
-   "updatedBy": "Veve",
+   "version": 7,
+   "updatedAt": 1795330947273,
+   "updatedBy": "Sherleen",
    "lastUsed": 0,
-   "hidden": false
+   "hidden": true,
+   "deletedAt": 1795330947273,
+   "deletedBy": "Sherleen"
   },
   {
    "id": "s_mvx7ui54r13o",
