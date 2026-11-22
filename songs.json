@@ -22525,6 +22525,106 @@
    "updatedBy": "nicole",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwr3q2kxhmhg",
+   "title": "[IND] KUSIAPKAN HATIKU TUHAN",
+   "authors": [
+    "hank samuel"
+   ],
+   "author": "hank samuel",
+   "sections": [
+    {
+     "key": "verse 1",
+     "tag": "Verse 1",
+     "lines": [
+      "Kusiapkan hatiku Tuhan",
+      "Tuk dengar FirmanMu saat ini",
+      "Ku sujud menyembahMu Tuhan",
+      "Dalam hadiratMu saat ini"
+     ],
+     "notes": []
+    },
+    {
+     "key": "verse 2",
+     "tag": "Verse 2",
+     "lines": [
+      "Curahkan urapanMu Tuhan",
+      "Bagi jemaatMu saat ini",
+      "Kusiapkan hatiku Tuhan",
+      "Tuk dengar FirmanMu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "FirmanMu Tuhan tiada berubah",
+      "Dahulu sekarang selama lamanya",
+      "Tiada berubah",
+      "FirmanMu Tuhan penolong hidupku",
+      "Kusiapkan hatiku Tuhan",
+      "Tuk dengar FirmanMu"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse 1",
+    "verse 2",
+    "chorus"
+   ],
+   "slides": [
+    [
+     "Kusiapkan hatiku Tuhan",
+     "Tuk dengar FirmanMu saat ini",
+     "Ku sujud menyembahMu Tuhan"
+    ],
+    [
+     "Dalam hadiratMu saat ini"
+    ],
+    [
+     "Curahkan urapanMu Tuhan",
+     "Bagi jemaatMu saat ini",
+     "Kusiapkan hatiku Tuhan"
+    ],
+    [
+     "Tuk dengar FirmanMu"
+    ],
+    [
+     "FirmanMu Tuhan tiada berubah",
+     "Dahulu sekarang selama lamanya",
+     "Tiada berubah"
+    ],
+    [
+     "FirmanMu Tuhan penolong hidupku",
+     "Kusiapkan hatiku Tuhan",
+     "Tuk dengar FirmanMu"
+    ]
+   ],
+   "tags": [
+    "Verse 1",
+    "",
+    "Verse 2",
+    "",
+    "Chorus",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1795307492637,
+   "updatedBy": "Sherleen",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
