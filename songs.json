@@ -22701,6 +22701,88 @@
    "updatedBy": "Sherleen",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwtdg24r5ivd",
+   "title": "[IND] YESUS BESERTAKU",
+   "authors": [
+    "JPCC Worship"
+   ],
+   "author": "JPCC Worship",
+   "sections": [
+    {
+     "key": "verse 1",
+     "tag": "Verse 1",
+     "lines": [
+      "Ku daki, daki, daki, daki gunung yang tinggi",
+      "Ku turun, turun, turun, turun lembah yang dalam Ku melintasi padang rumput hijau terbentang Yesus besertaku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "verse 2",
+     "tag": "Verse 2",
+     "lines": [
+      "Ku terbang, terbang, terbang, terbang luar angkasa Ku selam, selam, selam, selam, dalam samudra",
+      "Ku dayung, dayung, dayung, dayung p'rahu di sungai Yesus besertaku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "Di kanan Kau ada",
+      "Di kiri Kau ada",
+      "Di atas dan di bawah Kau ada Di suka Kau ada",
+      "Di dukaku Kau ada",
+      "Karna Engkau Yesusku"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse 1",
+    "verse 2",
+    "chorus"
+   ],
+   "slides": [
+    [
+     "Ku daki, daki, daki, daki gunung yang tinggi",
+     "Ku turun, turun, turun, turun lembah yang dalam Ku melintasi padang rumput hijau terbentang Yesus besertaku"
+    ],
+    [
+     "Ku terbang, terbang, terbang, terbang luar angkasa Ku selam, selam, selam, selam, dalam samudra",
+     "Ku dayung, dayung, dayung, dayung p'rahu di sungai Yesus besertaku"
+    ],
+    [
+     "Di kanan Kau ada",
+     "Di kiri Kau ada",
+     "Di atas dan di bawah Kau ada Di suka Kau ada"
+    ],
+    [
+     "Di dukaku Kau ada",
+     "Karna Engkau Yesusku"
+    ]
+   ],
+   "tags": [
+    "Verse 1",
+    "Verse 2",
+    "Chorus",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1795444758203,
+   "updatedBy": "Sherleen",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
