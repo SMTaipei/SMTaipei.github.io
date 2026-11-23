@@ -22783,6 +22783,100 @@
    "updatedBy": "Sherleen",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwtdityfntsj",
+   "title": "[IND] PUJILAH NAMANYA",
+   "authors": [
+    "GMS Live Kids"
+   ],
+   "author": "GMS Live Kids",
+   "sections": [
+    {
+     "key": "verse",
+     "tag": "Verse",
+     "lines": [
+      "Saat dunia penuh tantangan",
+      "Ku takkan sendiri",
+      "Saat ku goyah kurasa bimbang",
+      "Yesus menjagaku."
+     ],
+     "notes": []
+    },
+    {
+     "key": "pre chorus",
+     "tag": "Pre Chorus",
+     "lines": [
+      "Kutakkan takut",
+      "Takkan gentar",
+      "Dia besertaku."
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "Pujilah namaNya",
+      "Yesus Dia Allah yang perkasa",
+      "Dia yang memb'ri kekuatan dan kemenangan Pujilah namaNya",
+      "Yesus Dia Allah yang menuntunku",
+      "Dia yang memberi pengharapan",
+      "Masa depan bagiku."
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse",
+    "pre chorus",
+    "chorus"
+   ],
+   "slides": [
+    [
+     "Saat dunia penuh tantangan",
+     "Ku takkan sendiri",
+     "Saat ku goyah kurasa bimbang"
+    ],
+    [
+     "Yesus menjagaku."
+    ],
+    [
+     "Kutakkan takut",
+     "Takkan gentar",
+     "Dia besertaku."
+    ],
+    [
+     "Pujilah namaNya",
+     "Yesus Dia Allah yang perkasa",
+     "Dia yang memb'ri kekuatan dan kemenangan Pujilah namaNya"
+    ],
+    [
+     "Yesus Dia Allah yang menuntunku",
+     "Dia yang memberi pengharapan",
+     "Masa depan bagiku."
+    ]
+   ],
+   "tags": [
+    "Verse",
+    "",
+    "Pre Chorus",
+    "Chorus",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1795444888454,
+   "updatedBy": "Sherleen",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
