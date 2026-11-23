@@ -22879,6 +22879,112 @@
    "hidden": true,
    "deletedAt": 1795444929716,
    "deletedBy": "Sherleen"
+  },
+  {
+   "id": "s_mwtdopw7co30",
+   "title": "[IND] SPERTI BAPA SAYANG ANAKNYA",
+   "authors": [
+    "jeffry s tjandra"
+   ],
+   "author": "jeffry s tjandra",
+   "sections": [
+    {
+     "key": "verse 1",
+     "tag": "Verse 1",
+     "lines": [
+      "Bapa besar sungguh kasih setiaMu",
+      "Nyata sungguh perlindunganMu",
+      "Tak satu kuasa mampu pisahkan",
+      "Aku dari kasihMu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "verse 2",
+     "tag": "Verse 2",
+     "lines": [
+      "Bapa ajarku slalu hormatiMu",
+      "Ajarku turut perintahMu",
+      "Brikanku hati tuk menyembahMu",
+      "Dan bersyukur s'tiap waktu"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "Sperti Bapa sayang anakNya",
+      "Demikianlah Engkau mengasihiku",
+      "Kau jadikan biji mataMu",
+      "Kau berikan s'mua yang ada padaMu",
+      "Sperti Bapa sayang anakNya",
+      "Demikianlah Kau menuntun langkahku",
+      "Hari depan indah Kau beri RancanganMu yang terbaik bagiku"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse 1",
+    "verse 2",
+    "chorus"
+   ],
+   "slides": [
+    [
+     "Bapa besar sungguh kasih setiaMu",
+     "Nyata sungguh perlindunganMu",
+     "Tak satu kuasa mampu pisahkan"
+    ],
+    [
+     "Aku dari kasihMu"
+    ],
+    [
+     "Bapa ajarku slalu hormatiMu",
+     "Ajarku turut perintahMu",
+     "Brikanku hati tuk menyembahMu"
+    ],
+    [
+     "Dan bersyukur s'tiap waktu"
+    ],
+    [
+     "Sperti Bapa sayang anakNya",
+     "Demikianlah Engkau mengasihiku",
+     "Kau jadikan biji mataMu"
+    ],
+    [
+     "Kau berikan s'mua yang ada padaMu",
+     "Sperti Bapa sayang anakNya",
+     "Demikianlah Kau menuntun langkahku"
+    ],
+    [
+     "Hari depan indah Kau beri RancanganMu yang terbaik bagiku"
+    ]
+   ],
+   "tags": [
+    "Verse 1",
+    "",
+    "Verse 2",
+    "",
+    "Chorus",
+    "",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1795445155693,
+   "updatedBy": "Sherleen",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
