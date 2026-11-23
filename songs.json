@@ -22872,11 +22872,13 @@
     ""
    ],
    "perSlide": 3,
-   "version": 1,
-   "updatedAt": 1795444888454,
+   "version": 2,
+   "updatedAt": 1795444929716,
    "updatedBy": "Sherleen",
    "lastUsed": 0,
-   "hidden": false
+   "hidden": true,
+   "deletedAt": 1795444929716,
+   "deletedBy": "Sherleen"
   }
  ],
  "setlists": [
