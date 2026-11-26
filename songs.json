@@ -22985,6 +22985,78 @@
    "updatedBy": "Sherleen",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mwxix1tkknhz",
+   "title": "[IND] ALLAH BAPA PUTRA DAN ROH KUDUS",
+   "authors": [
+    "AOG Worship"
+   ],
+   "author": "AOG Worship",
+   "sections": [
+    {
+     "key": "verse",
+     "tag": "verse",
+     "lines": [
+      "Hanya Kau, Tuhan Yesus",
+      "Yang b′riku kedamaian",
+      "Hanya Kau, ya Roh Kudus",
+      "Yang b'riku penghiburan"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "chorus",
+     "lines": [
+      "Bapa, segala yang baik",
+      "Semua datang dari takhta-Mu",
+      "Allah, Bapa, Putra, dan Roh Kudus",
+      "Ku mengasihi-Mu"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse",
+    "chorus"
+   ],
+   "slides": [
+    [
+     "Hanya Kau, Tuhan Yesus",
+     "Yang b′riku kedamaian",
+     "Hanya Kau, ya Roh Kudus"
+    ],
+    [
+     "Yang b'riku penghiburan"
+    ],
+    [
+     "Bapa, segala yang baik",
+     "Semua datang dari takhta-Mu",
+     "Allah, Bapa, Putra, dan Roh Kudus"
+    ],
+    [
+     "Ku mengasihi-Mu"
+    ]
+   ],
+   "tags": [
+    "verse",
+    "",
+    "chorus",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 3,
+   "version": 1,
+   "updatedAt": 1795695806991,
+   "updatedBy": "Sherleen",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
