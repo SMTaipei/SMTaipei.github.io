@@ -22757,11 +22757,13 @@
     ],
     [
      "Di kanan Kau ada",
-     "Di kiri Kau ada",
-     "Di atas dan di bawah Kau ada Di suka Kau ada"
+     "Di kiri Kau ada"
     ],
     [
-     "Di dukaku Kau ada",
+     "Di atas dan di bawah Kau ada Di suka Kau ada",
+     "Di dukaku Kau ada"
+    ],
+    [
      "Karna Engkau Yesusku"
     ]
    ],
@@ -22769,17 +22771,19 @@
     "Verse 1",
     "Verse 2",
     "Chorus",
+    "",
     ""
    ],
    "notes": [
     "",
     "",
     "",
+    "",
     ""
    ],
-   "perSlide": 3,
-   "version": 1,
-   "updatedAt": 1795444758203,
+   "perSlide": 2,
+   "version": 2,
+   "updatedAt": 1795696071388,
    "updatedBy": "Sherleen",
    "lastUsed": 0,
    "hidden": false
