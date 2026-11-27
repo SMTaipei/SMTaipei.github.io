@@ -1168,6 +1168,13 @@
     #controls #restartBtn { order: 4; }
     #controls #swapBtn    { order: 5; }
     #controls #flashBtn   { order: 6; }
+
+    /* Without Swap the second row holds only two buttons, so it is split in
+       halves instead of leaving the third column empty. */
+    body:not(.solo-mode) #controls { grid-template-columns: repeat(6, 1fr); }
+    body:not(.solo-mode) #controls button { grid-column: span 2; }
+    body:not(.solo-mode) #controls #restartBtn,
+    body:not(.solo-mode) #controls #flashBtn { grid-column: span 3; }
   }
   /* Swap only lives in standalone. The console reaches the screen through the
      Announce tab instead, so there it would be a second way to do one job. */
