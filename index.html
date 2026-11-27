@@ -1169,6 +1169,9 @@
     #controls #swapBtn    { order: 5; }
     #controls #flashBtn   { order: 6; }
   }
+  /* Swap only lives in standalone. The console reaches the screen through the
+     Announce tab instead, so there it would be a second way to do one job. */
+  body:not(.solo-mode) #controls #swapBtn { display: none; }
 
   .op-grid {
     width: 100%;
@@ -10166,7 +10169,7 @@ if ("serviceWorker" in navigator) {
     else if (e.key === "ArrowDown") { e.preventDefault(); adjust(-60000); }
     else if (e.key === "r" || e.key === "R") { restartRunItem(null); armTimer(T.totalMs, false); }
     else if (e.key === "f" || e.key === "F") { T.flashing = !T.flashing; commit(); }
-    else if (e.key === "s" || e.key === "S") toggleMessage();
+    else if ((e.key === "s" || e.key === "S") && role === "solo") toggleMessage();
     else if (e.key === "l" || e.key === "L") toggleLyrics();
     else if (e.key === "b" || e.key === "B") {
       if (T.mode === "lyrics") { T.blank = !T.blank; commit(); }
