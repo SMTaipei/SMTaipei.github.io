@@ -23695,12 +23695,22 @@
   {
    "id": "sl_mx042272ansy",
    "name": "Setlist 29/11",
-   "entries": [],
-   "updatedAt": 1795852268930,
+   "entries": [
+    {
+     "id": "s_mx046v3mmxo5",
+     "ms": 0
+    }
+   ],
+   "updatedAt": 1795852696740,
    "updatedBy": "Veve"
   }
  ],
- "setlist": [],
- "setlistAt": 1795852268930,
+ "setlist": [
+  {
+   "id": "s_mx046v3mmxo5",
+   "ms": 0
+  }
+ ],
+ "setlistAt": 1795852696740,
  "setlistBy": "Veve"
 }
