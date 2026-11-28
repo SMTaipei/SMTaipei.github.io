@@ -23719,9 +23719,13 @@
     {
      "id": "s_mx04bmz2me0y",
      "ms": 0
+    },
+    {
+     "id": "s_mvx1h5khavh8",
+     "ms": 0
     }
    ],
-   "updatedAt": 1795852802468,
+   "updatedAt": 1795852823707,
    "updatedBy": "Veve"
   }
  ],
@@ -23745,8 +23749,12 @@
   {
    "id": "s_mx04bmz2me0y",
    "ms": 0
+  },
+  {
+   "id": "s_mvx1h5khavh8",
+   "ms": 0
   }
  ],
- "setlistAt": 1795852802468,
+ "setlistAt": 1795852823707,
  "setlistBy": "Veve"
 }
