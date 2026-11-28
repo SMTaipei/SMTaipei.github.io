@@ -23417,6 +23417,110 @@
    "updatedBy": "Veve",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mx04acwv4jha",
+   "title": "[IND] S’TURUT KEHENDAKMU",
+   "authors": [
+    "GMS Live"
+   ],
+   "author": "GMS Live",
+   "sections": [
+    {
+     "key": "verse",
+     "tag": "Verse",
+     "lines": [
+      "Tiap langkahku ya Tuhan",
+      "‘Tak pernah Kau tinggalkan",
+      "S’gnap hidupku terbuka",
+      "Di hadapan-Mu",
+      "Hari yang kujalani",
+      "Masa yang ‘kan datang",
+      "Semuanya di tangan-Mu",
+      "Takkan takut kumelangkah"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "Kunyatakan Kaulah Tuhan",
+      "Berdaulat atas hidupku",
+      "Kus’rahkan masa depanku",
+      "Di tangan-Mu Tuhan",
+      "Kunyatakan Kaulah Tuhan",
+      "Berdaulat atas hidupku",
+      "Terjadilah kepadaku",
+      "Seturut kehendak-Mu Tuhan"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse",
+    "chorus"
+   ],
+   "slides": [
+    [
+     "Tiap langkahku ya Tuhan",
+     "‘Tak pernah Kau tinggalkan"
+    ],
+    [
+     "S’gnap hidupku terbuka",
+     "Di hadapan-Mu"
+    ],
+    [
+     "Hari yang kujalani",
+     "Masa yang ‘kan datang"
+    ],
+    [
+     "Semuanya di tangan-Mu",
+     "Takkan takut kumelangkah"
+    ],
+    [
+     "Kunyatakan Kaulah Tuhan",
+     "Berdaulat atas hidupku"
+    ],
+    [
+     "Kus’rahkan masa depanku",
+     "Di tangan-Mu Tuhan"
+    ],
+    [
+     "Kunyatakan Kaulah Tuhan",
+     "Berdaulat atas hidupku"
+    ],
+    [
+     "Terjadilah kepadaku",
+     "Seturut kehendak-Mu Tuhan"
+    ]
+   ],
+   "tags": [
+    "Verse",
+    "",
+    "",
+    "",
+    "Chorus",
+    "",
+    "",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 2,
+   "version": 1,
+   "updatedAt": 1795852632283,
+   "updatedBy": "Veve",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
