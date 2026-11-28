@@ -23299,6 +23299,124 @@
    "updatedBy": "Veve",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mx049hw42kx7",
+   "title": "[IND] KUMENANG",
+   "authors": [
+    "Symphony Worship"
+   ],
+   "author": "Symphony Worship",
+   "sections": [
+    {
+     "key": "verse",
+     "tag": "Verse",
+     "lines": [
+      "Bangkitlah dan perkatakan berkat",
+      "Atas hidup yang dibrikanNya",
+      "Dengan pasti dengan iman",
+      "Nyatakan kekuatanNya",
+      "KedahsyatanNya dihidupku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "pre-chorus",
+     "tag": "Pre-Chorus",
+     "lines": [
+      "Imanku berkata",
+      "Tuhanku hebat",
+      "Yesusku berkata",
+      "Ku kuat melangkah bersama Dia"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "Ku memuji",
+      "Ku bersorak",
+      "Ku mengangkat tinggi panjiNya",
+      "Panji kemenanganNya",
+      "Ku bernyanyi",
+      "Ku bersorak",
+      "Ku mengangkat tinggi panjiNya",
+      "Panji kemenangan, ku menang"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse",
+    "pre-chorus",
+    "chorus"
+   ],
+   "slides": [
+    [
+     "Bangkitlah dan perkatakan berkat",
+     "Atas hidup yang dibrikanNya"
+    ],
+    [
+     "Dengan pasti dengan iman",
+     "Nyatakan kekuatanNya"
+    ],
+    [
+     "KedahsyatanNya dihidupku"
+    ],
+    [
+     "Imanku berkata",
+     "Tuhanku hebat"
+    ],
+    [
+     "Yesusku berkata",
+     "Ku kuat melangkah bersama Dia"
+    ],
+    [
+     "Ku memuji",
+     "Ku bersorak"
+    ],
+    [
+     "Ku mengangkat tinggi panjiNya",
+     "Panji kemenanganNya"
+    ],
+    [
+     "Ku bernyanyi",
+     "Ku bersorak"
+    ],
+    [
+     "Ku mengangkat tinggi panjiNya",
+     "Panji kemenangan, ku menang"
+    ]
+   ],
+   "tags": [
+    "Verse",
+    "",
+    "",
+    "Pre-Chorus",
+    "",
+    "Chorus",
+    "",
+    "",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 2,
+   "version": 1,
+   "updatedAt": 1795852592581,
+   "updatedBy": "Veve",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
