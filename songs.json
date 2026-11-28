@@ -23521,6 +23521,70 @@
    "updatedBy": "Veve",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mx04bmz2me0y",
+   "title": "[IND] SEBAB AKU INI MILIKMU",
+   "authors": [
+    "Sari Simorangkir"
+   ],
+   "author": "Sari Simorangkir",
+   "sections": [
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "Sebab aku ini milikMu",
+      "Aku di dalam hatiMu",
+      "Kasih setiaMu",
+      "Yang menghidupkan aku",
+      "Sebab aku ini milikMu",
+      "Tak kupertahankan hidupku",
+      "Biar kehendakMu",
+      "Kerjakanlah dalamku"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "chorus"
+   ],
+   "slides": [
+    [
+     "Sebab aku ini milikMu",
+     "Aku di dalam hatiMu"
+    ],
+    [
+     "Kasih setiaMu",
+     "Yang menghidupkan aku"
+    ],
+    [
+     "Sebab aku ini milikMu",
+     "Tak kupertahankan hidupku"
+    ],
+    [
+     "Biar kehendakMu",
+     "Kerjakanlah dalamku"
+    ]
+   ],
+   "tags": [
+    "Chorus",
+    "",
+    "",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 2,
+   "version": 1,
+   "updatedAt": 1795852692082,
+   "updatedBy": "Veve",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
