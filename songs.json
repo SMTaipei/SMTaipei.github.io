@@ -23167,30 +23167,16 @@
    ],
    "updatedAt": 1795695811567,
    "updatedBy": "Sherleen"
+  },
+  {
+   "id": "sl_mx042272ansy",
+   "name": "Setlist 28/11",
+   "entries": [],
+   "updatedAt": 1795852246436,
+   "updatedBy": "Veve"
   }
  ],
- "setlist": [
-  {
-   "id": "s_mwtdg24r5ivd",
-   "ms": 0
-  },
-  {
-   "id": "s_mvcdbewgmdyi",
-   "ms": 0
-  },
-  {
-   "id": "s_mty2ect4iu1z",
-   "ms": 0
-  },
-  {
-   "id": "s_mwtdopw7co30",
-   "ms": 0
-  },
-  {
-   "id": "s_mwxix1tkknhz",
-   "ms": 0
-  }
- ],
- "setlistAt": 1795695811567,
- "setlistBy": "Sherleen"
+ "setlist": [],
+ "setlistAt": 1795852246436,
+ "setlistBy": "Veve"
 }
