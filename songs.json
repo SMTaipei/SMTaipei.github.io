@@ -23061,6 +23061,148 @@
    "updatedBy": "Sherleen",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mx046v3mmxo5",
+   "title": "[IND] KAU 123",
+   "authors": [
+    "GMS Live"
+   ],
+   "author": "GMS Live",
+   "sections": [
+    {
+     "key": "verse 1",
+     "tag": "Verse 1",
+     "lines": [
+      "Kau, satu, penuh kasih",
+      "Dua, penuh hikmat",
+      "Tiga, penuh kuasa",
+      "Kau mulia"
+     ],
+     "notes": []
+    },
+    {
+     "key": "verse 2",
+     "tag": "Verse 2",
+     "lines": [
+      "Kau ada waktu suka",
+      "Ada waktu duka",
+      "Kau setia",
+      "Dan selalu bersamaku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "pre-chorus",
+     "tag": "Pre-Chorus",
+     "lines": [
+      "Kau membuatku tersenyum",
+      "Membuatku tertawa",
+      "Membuatku bahagia"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus 1",
+     "tag": "Chorus 1",
+     "lines": [
+      "Yesus, Kaulah sahabat",
+      "S'lalu hadir setiap saat",
+      "Hatiku bergembira",
+      "Bersama-Mu, Yesusku"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus 2",
+     "tag": "Chorus 2",
+     "lines": [
+      "Kanan, kiri, ke depan",
+      "Mari semua bergoyang",
+      "Menari, bergembira",
+      "Sukacitaku dalam Kristus"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse 1",
+    "verse 2",
+    "pre-chorus",
+    "chorus 1",
+    "chorus 2"
+   ],
+   "slides": [
+    [
+     "Kau, satu, penuh kasih",
+     "Dua, penuh hikmat"
+    ],
+    [
+     "Tiga, penuh kuasa",
+     "Kau mulia"
+    ],
+    [
+     "Kau ada waktu suka",
+     "Ada waktu duka"
+    ],
+    [
+     "Kau setia",
+     "Dan selalu bersamaku"
+    ],
+    [
+     "Kau membuatku tersenyum",
+     "Membuatku tertawa"
+    ],
+    [
+     "Membuatku bahagia"
+    ],
+    [
+     "Yesus, Kaulah sahabat",
+     "S'lalu hadir setiap saat"
+    ],
+    [
+     "Hatiku bergembira",
+     "Bersama-Mu, Yesusku"
+    ],
+    [
+     "Kanan, kiri, ke depan",
+     "Mari semua bergoyang"
+    ],
+    [
+     "Menari, bergembira",
+     "Sukacitaku dalam Kristus"
+    ]
+   ],
+   "tags": [
+    "Verse 1",
+    "",
+    "Verse 2",
+    "",
+    "Pre-Chorus",
+    "",
+    "Chorus 1",
+    "",
+    "Chorus 2",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 2,
+   "version": 1,
+   "updatedAt": 1795852470386,
+   "updatedBy": "Veve",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
