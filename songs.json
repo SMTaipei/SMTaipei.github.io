@@ -23203,6 +23203,102 @@
    "updatedBy": "Veve",
    "lastUsed": 0,
    "hidden": false
+  },
+  {
+   "id": "s_mx047zg50ulj",
+   "title": "[IND] PUJI TUHAN ASIK",
+   "authors": [
+    "GMS Live"
+   ],
+   "author": "GMS Live",
+   "sections": [
+    {
+     "key": "verse",
+     "tag": "Verse",
+     "lines": [
+      "Wahai semua yang bernafas",
+      "Son boleh gengsi son boleh malu hati",
+      "Puji Tuhan, katong puji Tuhan",
+      "Sebab Dia baik"
+     ],
+     "notes": []
+    },
+    {
+     "key": "chorus",
+     "tag": "Chorus",
+     "lines": [
+      "Katong bergembira, menari gembira",
+      "Puji Tuhan asik asik asik",
+      "Oh sukacita melimpah di hati",
+      "Puji Tuhan asik"
+     ],
+     "notes": []
+    },
+    {
+     "key": "bridge",
+     "tag": "Bridge",
+     "lines": [
+      "S’bab Dia baik",
+      "S’bab Dia baik",
+      "Katong puji Tuhan",
+      "sebab Dia baik"
+     ],
+     "notes": []
+    }
+   ],
+   "order": [
+    "verse",
+    "chorus",
+    "bridge"
+   ],
+   "slides": [
+    [
+     "Wahai semua yang bernafas",
+     "Son boleh gengsi son boleh malu hati"
+    ],
+    [
+     "Puji Tuhan, katong puji Tuhan",
+     "Sebab Dia baik"
+    ],
+    [
+     "Katong bergembira, menari gembira",
+     "Puji Tuhan asik asik asik"
+    ],
+    [
+     "Oh sukacita melimpah di hati",
+     "Puji Tuhan asik"
+    ],
+    [
+     "S’bab Dia baik",
+     "S’bab Dia baik"
+    ],
+    [
+     "Katong puji Tuhan",
+     "sebab Dia baik"
+    ]
+   ],
+   "tags": [
+    "Verse",
+    "",
+    "Chorus",
+    "",
+    "Bridge",
+    ""
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "perSlide": 2,
+   "version": 1,
+   "updatedAt": 1795852522513,
+   "updatedBy": "Veve",
+   "lastUsed": 0,
+   "hidden": false
   }
  ],
  "setlists": [
