@@ -23294,11 +23294,13 @@
     ""
    ],
    "perSlide": 2,
-   "version": 1,
-   "updatedAt": 1795852522513,
+   "version": 2,
+   "updatedAt": 1795852730976,
    "updatedBy": "Veve",
    "lastUsed": 0,
-   "hidden": false
+   "hidden": true,
+   "deletedAt": 1795852730976,
+   "deletedBy": "Veve"
   },
   {
    "id": "s_mx049hw42kx7",
