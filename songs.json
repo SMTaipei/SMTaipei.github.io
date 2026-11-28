@@ -23414,11 +23414,13 @@
     ""
    ],
    "perSlide": 2,
-   "version": 1,
-   "updatedAt": 1795852592581,
+   "version": 2,
+   "updatedAt": 1795852746775,
    "updatedBy": "Veve",
    "lastUsed": 0,
-   "hidden": false
+   "hidden": true,
+   "deletedAt": 1795852746775,
+   "deletedBy": "Veve"
   },
   {
    "id": "s_mx04acwv4jha",
